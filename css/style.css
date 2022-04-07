@@ -1,0 +1,158 @@
+/*COLORES
+AZUL: #080640
+NEGRO: #121D26
+LILA: #7B32EF
+*/
+a{
+    color: white;
+    text-decoration: none;
+}
+.fa-xmark{
+    color: white;
+    font-size: 2rem;
+}
+.fa-bars{
+    color: white;
+    font-size: 2rem;
+}
+.conoce{
+    background-color: #7B32EF;
+    border-color: #7B32EF;
+    border-radius: 5px;
+}
+/*COMIENZAN FONDOS DE LAS PESTAÑAS*/
+.header{
+    background-color: #080640;
+    color: #fff;
+}
+.showcase-menu{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 90vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #fff;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #080640;
+
+}
+.showcase-menu header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.showcase-somos{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 90vh;
+    padding: 100px;
+    display: flex;
+    background: #7B32EF;
+    justify-content: space-between;
+    align-items: end;
+    color: #fff;
+    z-index: 2;
+   background-image: url("../img/header-somos.png");
+}
+.showcase-somos header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.showcase-planes{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 90vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #fff;
+    z-index: 2;
+    background-color: #080640;
+}
+.showcase-planes header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/*TERMINAN FONDOS DE LAS PANTALLAS*/
+.fondo-azul{
+    background-color: #080640;
+    color: white;
+}
+.planes{
+    text-align: center;
+}
+.activa-linea{
+    text-align: center;
+    padding-bottom: 300px;
+}
+.activa-linea h3{
+    margin-top: 300px;
+}
+.portabilidad-facil{
+
+}
+.telefononia-limite{
+
+}
+.comunicate{
+
+}
+.logo-footer{
+    max-width: 150px;
+}
+.redes img{
+    max-width: 20px;
+}
+/*BOTONES*/
+.comunicate button{
+    margin-left: 40px;
+}
+.btn-menu{
+    max-width: 40px;
+}
+.conoce{
+    width: 150px;
+}
+.conoce:hover{
+    background-color: #7B32EF;
+}
+/*TERMINA BOTONES*/
+footer{
+    background-color: #7B32EF;
+    color: white;
+    text-align: center;
+}footer li{
+    display: inline-block;
+    margin-left: 90px;
+}
