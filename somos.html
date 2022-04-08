@@ -11,32 +11,36 @@
     <link rel="stylesheet" href="css/animate.css">
     <title>DIRÉ MOVIL | SOMOS</title>
 </head>
-<body>
-
-     <!--HEADER-->
-    <section class="showcase-somos" id="showcase">
-        <header class="navbar navbar-expand-lg">
-            <a class="navbar-brand">
-                <img src="img/Logo-KLUANE-Bco.gif" alt="DIRÉ MOVIL" class="img-fluid" id="logo-header"/></a>
-                <button class="btn btn-outline " onclick="menu()">
-                    <i class="fa-solid fa-bars"></i>
+<body>    
+    <!--HEADER-->
+    <header class="header-somos">
+        <nav class="navbar navbar-light pt-5">
+            <div class="container">
+            <a class="navbar-brand">Navbar</a>
+            <form class="d-flex">
+                <button class="btn btn-link" type="submit" onclick="menu()">
+                    <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
                 </button>
-        </header>
+            </form>
+            </div>
+        </nav>
         <div class="container">
-            <div class="row">
-                <h1 class="text-center"><b>CON MUY POCO PUEDES <br> DECIR MUCHO</b></h1>
+            <div class="row d-flex justify-content-center pt-5">
+                <h1 class="text-center display-3"><b>CON MUY POCO PUEDES <br> DECIR MUCHO</b></h1>
             </div>
         </div>
-    </section>
+        
+    </header>
+    
     <!--POR QUÉ DIRÉ-->
     <div class="container-fluid fondo-azul pt-5">
-        <div class="container">
-            <div class="row">
+        <div class="container pt-5">
+            <div class="row pt-5">
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
-                    <h1><b>¿POR QUÉ DIRÉ?</b></h1>
+                    <h1 class="display-2"><b>¿POR QUÉ DIRÉ?</b></h1>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
-                    <p>Somos <b>una compañía de telefonía móvil enfocada en <br>
+                    <p class="h4">Somos <b>una compañía de telefonía móvil enfocada en <br>
                     conectar personas a través de nuestro servicio.</b> Nos <br>
                     distingue la calidad, el soporte y la accesibilidad que <br>
                     tenemos con nuestros usuarios ofreciendo planes que <br>
@@ -45,27 +49,28 @@
                 </div>
             </div>
             <div class="row pt-5">
-                <h2 class="text-center"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h2>
+                <h1 class="text-center pt-5 pb-5"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h1>
             </div>
         </div>
     </div>
+    <!--CÓMO FUNCIONA-->
     <div class="container-fluid fondo-azul pt-5">
         <div class="container pt-5">
             <div class="row pt-5">
-                <h1 class="text-center"><b>¿CÓMO FUNCIONA?</b></h1>
-                <h4 class="text-center">En los siguientes pasos te mostramos cómo vivir tu experiencia al límite:</h4>
+                <h1 class="text-center display-2"><b>¿CÓMO FUNCIONA?</b></h1>
+                <h4 class="text-center pt-5">En los siguientes pasos te mostramos cómo vivir tu experiencia al límite:</h4>
             </div>
             <div class="row pt-5">
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
                     <h1 class="text-center"><b>01</b></h1>
                     <h2 class="text-center"><b>ADQUIERE TU SIM</b></h2>
-                    <a href="#"><h5 class="text-center">Ver más</h5> </a>
+                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#adquiere-sim">Ver más</h5>
                 </div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
                     <h1 class="text-center"><b>02</b></h1>
                     <h2 class="text-center"><b>ACTIVA TU LÍNEA</b></h2>
-                    <a href="#"> <h5 class="text-center">Conoce más</h5> </a>
+                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#activa-linea">Conoce más</h5>
                 </div>
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             </div>
@@ -74,17 +79,189 @@
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
                     <h1 class="text-center"><b>03</b></h1>
                     <h2 class="text-center"><b>RECARGA TU PLAN</b></h2>
-                    <a href="#"> <h5 class="text-center">Empieza aqui</h5> </a>
+                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#recarga-plan">Empieza aqui</h5>
                 </div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
                     <h1 class="text-center"><b>04</b></h1>
                     <h2 class="text-center"><b>DISFRUTA DIRÉ</b></h2>
-                    <a href="#"> <h5 class="text-center">Ver más</h5> </a>
+                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#disfruta-dire">Ver más</h5>
                 </div>
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             </div>
         </div>
     </div>
+    <!--MODALES-->
+    <!--ADQUIERE SIM-->
+    <div class="modal fade" id="adquiere-sim" tabindex="-1" aria-labelledby="adquiere-sim" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content ">
+            <div class="modal-body fondo-azul">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 fondo-morado">
+                            <div class="">
+                                <img src="img/Logo-bco.png" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
+                            </div>
+                            <img src="img/chip-pop-adquiere-sim.png" alt="ADQUIERE TU SIM" class="img-fluid sim"/>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 texto-modal">
+                            <div class="text-end">
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+                                </button>
+                            </div>
+                           
+                            <h1 class="text-center display-3 pt-5"><b>AQUIERE TU SIM</b></h1>
+                            <h5 class="text-center pt-5">Comunicate con nosotros</h5>
+                            <div class="text-center pt-3">
+                                <button class="btn btn-primary btn-tel-modal">
+                                    <a href="tel:"><h5><b>00 00 0000 0000</b></h5> </a>
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--ACTIVA TU LÍNEA-->
+    <div class="modal fade" id="activa-linea" tabindex="-1" aria-labelledby="activa-linea" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content ">
+            <div class="modal-body fondo-azul">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 fondo-morado-activa">
+                            <div class="">
+                                <img src="img/Logo-bco.png" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
+                            </div>
+                            <img src="img/iconos-activa-linea.png" alt="ACTIVA TU LINEA" class="img-fluid iconos-activa"/>
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5">
+                            <div class="text-end">
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+                                    <img src="img/btn-close.png" alt="Cerrar" class="img-fluid btn-modal"/>
+                                </button>
+                            </div>
+                            <h1 class="text-center display-3 pt-5"><b>ACTIVA TU LÍNEA</b></h1>
+                            <h5 class="text-center pt-5">Nuestro equipo de soporte te solicitará la siguiente información <br>
+                            y te guiará en todo el proceso</h5>
+                            <div class="row pt-5">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
+                                    <h5 class="text-center">01</h5>
+                                    <h5 class="text-center">NOMBRE DEL TITULAR <br> DE LA LÍNEA</h5>
+                                </div>
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
+                                    <h5 class="text-center">02</h5>
+                                    <h5 class="text-center">CORREO ELECTRÓNICO</h5>
+                                </div>
+                            </div>
+                            <div class="row pt-5">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
+                                    <h5 class="text-center">03</h5>
+                                    <h5 class="text-center">DOMICILIO DEL USUARIO <br> FINAL</h5>
+                                </div>
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
+                                    <h5 class="text-center">04</h5>
+                                    <h5 class="text-center"> NÚMERO DE TELÉFONO <br> ALTERNATIVO</h5>
+                                </div> 
+                            </div>
+                            <div class="text-center pt-5">
+                                <h5 class="text-center pt-5 pb-3">Comunicate con nosotros</h5>
+                                <button class="btn btn-primary btn-tel-modal">
+                                    <a href="tel:"><h5><b>00 00 0000 0000</b></h5> </a>
+                                </button>
+                            </div>
+                            <div class="text-start pt-5">
+                                <h5 class="texto-morado pt-5">Importante:</h5>
+                                <ul>
+                                    <li>Asegurate que tu equipo móvil es liberado.</li>
+                                    <li>Apaga tu equipo móvil, inserta tu SIM Diré Móvil y no lo enciendas hasta verificar que la SIM está bien colocada.</li>
+                                    <li>Una vez que el equipo móvil tiene nueva SIM, enciende tu equipo y acepta todas las notificaciones para asegurar la configuración de tu equipo móvil.</li>
+                                </ul>
+                            </div>
+                            <div class="text-start pt-5">
+                                <p class="texto-morado">Revisa las consideraciones para activar tu línea revisa las consideraciones para activar tu línea</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--RECARGA PLAN-->
+    <div class="modal fade" id="recarga-plan" tabindex="-1" aria-labelledby="recarga-plan" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content ">
+            <div class="modal-body fondo-azul">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 fondo-morado">
+                            <div class="">
+                                <img src="img/Logo-bco.png" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
+                            </div>
+                            <img src="img/celular-modal.png" alt="REACRGA TU PLAN" class="img-fluid celular-modal"/>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 texto-modal">
+                            <div class="text-end">
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+                                    <img src="img/btn-close.png" alt="Cerrar" class="img-fluid btn-modal"/>
+                                </button>
+                            </div>
+                            <h1 class="text-center display-3 pt-5"><b>RECARGA TU PLAN</b></h1>
+                            <h5 class="text-center pt-5 pb-5">¡Valida tu número con nuestro equipo y selecciona tu paquete!</h5>
+                            <h5 class="text-center pt-5">Comunicate con nosotros</h5>
+                            <div class="text-center pt-3">
+                                <button class="btn btn-primary btn-tel-modal">
+                                    <a href="tel:"><h5><b>00 00 0000 0000</b></h5> </a>
+                                </button>
+                            </div>
+                            <div class="pt-5">
+                                <h5 class="texto-morado text-center pt-5">Revisa las consideraciones para recargar tu plan</h5>
+                
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--DISFRUTA DIRÉ-->
+    <div class="modal fade" id="disfruta-dire" tabindex="-1" aria-labelledby="disfruta-dire" aria-hidden="true">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content ">
+            <div class="modal-body fondo-azul">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 fondo-morado">
+                            <div class="">
+                                <img src="img/Logo-bco.png" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
+                            </div>
+                            <img src="img/Send-mail-using-a-smartphone 1-02 1.png" alt="DISFRUTA DIRÉ" class="img-fluid cel-modal"/>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 texto-modal">
+                            <div class="text-end">
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+                                    <img src="img/btn-close.png" alt="Cerrar" class="img-fluid btn-modal"/>
+                                </button>
+                            </div>
+                            <h1 class="text-center display-3 pt-5"><b>DISFRUTA DIRÉ</b></h1>
+                            <h5 class="text-center pt-5 pb-5">Conoce más de Diré y entérate <br> de nuestras promociones</h5>
+                            <div class="input-group pt-5">
+                                <input type="text" class="form-control" placeholder="ejemplo@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">Suscribete</span>
+                              </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--TERMINA MODALES-->
     <!--TELEFONÍA AL LÍMITE-->
     <div class="container-fluid fondo-azul telefonia-limite pt-5">
         <div class="container pt-5">
@@ -100,31 +277,42 @@
     <div class="container-fluid fondo-azul comunicate pt-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <h1 class="text-center"><b>COMUNÍCATE YA</b></h1>
-                <h5 class="text-center">Si tienes alguna duda o estás experimentando dificultades con tu línea te <br> podemos ayudar</h5>
+                <h1 class="text-center display-3"><b>COMUNÍCATE YA</b></h1>
+                <h5 class="text-center pt-3">Si tienes alguna duda o estás experimentando dificultades con tu línea te <br> podemos ayudar</h5>
             </div>
             <div class="text-center pt-5">
-                <button class="btn-primary ">
-                    <a href="tel:">0000000000000</a>
-                </button><button class="btn-primary">
-                    <a href="#">FAQ'S</a>
-                </button>
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                        <div class="">
+                            <button class="btn btn-primary btn-tel">
+                                <a href="tel:"><h5><b>00 00 0000 0000</b></h5> </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                        <button class="btn btn-primary btn-faqs">
+                            <a href="faqs.html"><h5><b>FAQ'S</b></h5> </a>
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                </div> 
             </div>
         </div>
     </div>
     <!--SUSCRIBETE-->
-    <div class="container-fluid fondo-azul">
-        <div class="container">
-            <div class="row">
+    <div class="container-fluid fondo-azul pt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row pt-5">
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
                     <img src="img/newsletter.png" alt="DIRÉ MOVIL" class="img-fluid"/>
                 </div>
-                <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5">
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
                     <h1 class="pt-5"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
-                    <h3 class="pt-5">Conoce más de Diré y entérate de nuestras promociones.</h3>
+                    <h5 class="pt-5">Conoce más de Diré y entérate de nuestras promociones.</h5>
                     <div class="input-group pt-5">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        <input type="text" class="form-control" placeholder="ejemplo@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon3">
+                        <span class="input-group-text" id="basic-addon3">Suscribete</span>
                     </div>
                     
                 </div>
@@ -132,43 +320,57 @@
         </div>
     </div>
     <footer>
-        <div class="container">
-            <div class="row">
-                <img src="" alt="DIRÉ MOVIL" class="img-fluid"/>
+        <div class="container-fluid">
+            <div class="text-center pt-4 pb-4">
+                <img src="img/Logo-footer.png" alt="DIRÉ MOVIL" class="img-fluid logo-footer"/>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-12 pt-3">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SOMOS</a></li>
-                        <li><a href="#">PLANES</a></li>
-                        <li><a href="#">TÉRMINOS</a></li>
-                        <li><a href="#">POLITICAS</a></li>
-                        <li><a href="#">AVISO DE PRIVACIDAD</a></li>
-                        <li><a href="#"> CONTACTO</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="IG: DIRÉ MOVIL" class="img-fluid"/>
+                    <a href="index.html"><h5><b>HOME</b></h5> </a>
                 </div>
                 <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="FB: DIRÉ MOVIL" class="img-fluid"/>
+                    <a href="somos.html"><h5><b>SOMOS</b></h5> </a>
                 </div>
                 <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="TIK TOK: DIRÉ MOVIL" class="img-fluid"/>
+                    <a href="planes.html"><h5><b>PLANES</b></h5> </a>
+                </div>
+                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                    <a href="#"><h5><b>TÉRMINOS</b></h5></a>
+                </div>
+                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                    <a href="#"><h5><b>POLITICAS</b></h5></a>
                 </div>
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12">
-                    <h4>@diremovil</h4>
+                    <a href="#"><h5><b>AVISO DE PRIVACIDAD</b></h5></a>
                 </div>
-                <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                    <a href="#"><h5><b>CONTACTO</b></h5></a>
+                </div>
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             </div>
-            <div class="text-start pb-4">
-                <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" class="img-fluid"/>
+            <div class="container">
+                <div class="row pt-4 redes d-flex justify-content-center">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                    <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                        <img src="img/Icono-IG.png" alt="IG: DIRÉ MOVIL" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                        <img src="img/Icono-FB.png" alt="FB: DIRÉ MOVIL" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                        <img src="img/Icono-Tik-tok.png" alt="TIK TOK: DIRÉ MOVIL" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-12 col-sm-12">
+                        <h4>@diremovil</h4>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                </div>
+                <div class="text-start pb-4">
+                    <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" class="img-fluid"/>
+                </div>
             </div>
-        </div>
+        </div> 
     </footer>
 
     

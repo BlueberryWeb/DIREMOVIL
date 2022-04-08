@@ -2,10 +2,17 @@
 AZUL: #080640
 NEGRO: #121D26
 LILA: #7B32EF
+LILA BOTONES: #9D62D9
 */
 a{
     color: white;
     text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+li{
+    list-style: none;
 }
 .fa-xmark{
     color: white;
@@ -15,11 +22,7 @@ a{
     color: white;
     font-size: 2rem;
 }
-.conoce{
-    background-color: #7B32EF;
-    border-color: #7B32EF;
-    border-radius: 5px;
-}
+
 /*COMIENZAN FONDOS DE LAS PESTAÑAS*/
 .header{
     background-color: #080640;
@@ -53,31 +56,51 @@ a{
     justify-content: space-between;
 
 }
-.showcase-somos{
-    position: relative;
-    right: 0;
+.header-somos{
     width: 100%;
-    min-height: 90vh;
-    padding: 100px;
-    display: flex;
-    background: #7B32EF;
-    justify-content: space-between;
-    align-items: end;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    background-image: url("../img/header-somos.png");
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
     color: #fff;
-    z-index: 2;
-   background-image: url("../img/header-somos.png");
 }
-.showcase-somos header{
+.header-somos::after{
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    height: 100%;
+    background: linear-gradient(to right top, #7B32EF);
+    z-index: -1;
+}
+.header-somos h1{
+    margin-top: 450px;
+}
+.header-faqs{
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    background-image: url("../img/header-faqs.png");
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #080640;
+    mix-blend-mode: overlay;
 }
 .showcase-planes{
     position: relative;
@@ -104,11 +127,33 @@ a{
     justify-content: space-between;
 
 }
-/*TERMINAN FONDOS DE LAS PANTALLAS*/
+.fondo-morado{
+    background-image: url("../img/fondo-modales.png");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+}
+.fondo-morado-activa{
+    background-image: url("../img/fondo-modales.png");
+    background-repeat: no-repeat;
+    height: 145vh;
+    background-size: cover;
+}
 .fondo-azul{
     background-color: #080640;
     color: white;
 }
+/*.fondo-menu{
+    background-image: url("../img/menu-fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+.menu{
+    background-color: #080640;
+    width: 100%;
+    height: 90vh;
+}
+/*TERMINAN FONDOS DE LAS PANTALLAS*/
 .planes{
     text-align: center;
 }
@@ -134,20 +179,42 @@ a{
 .redes img{
     max-width: 20px;
 }
-/*BOTONES*/
-.comunicate button{
-    margin-left: 40px;
+.sim {
+    max-width: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
 }
-.btn-menu{
-    max-width: 40px;
+.iconos-activa{
+    margin-top: 400px;
 }
-.conoce{
-    width: 150px;
+.celular-modal{
+    margin-top: 100px;
+    max-width: 400px;
+    margin-left: 50px;
 }
-.conoce:hover{
-    background-color: #7B32EF;
+.cel-modal{
+    max-width: 500px;
+    margin-top: 90px;
+    margin-left: 50px;
 }
-/*TERMINA BOTONES*/
+.texto-modal h1{
+    margin-top: 50px;
+}
+.logo-modal{
+    max-width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.btn-modal{
+    margin-left: -80px;
+    color: #fff!important;
+}
+.modal-body{
+    padding: 0;
+}
+.texto-morado{
+    color: #7B32EF;
+}
 footer{
     background-color: #7B32EF;
     color: white;
@@ -156,3 +223,97 @@ footer{
     display: inline-block;
     margin-left: 90px;
 }
+.input-group input{
+    background: none;
+    border-radius: 0;
+}
+.input-group-text{
+    background-color: #7B32EF;
+    border-radius: 0;
+    border-color: #7B32EF;
+    color: #fff;
+}
+/*BOTONES*/
+.btn-menu{
+    max-width: 40px;
+}
+.conoce{
+    background-color: #7B32EF;
+    border-color: #7B32EF;
+    border-radius: 5px;
+    width: 150px;
+}
+.conoce:hover{
+    background-color: #7B32EF;
+}
+.btn-tel-modal{
+    background-color: #7B32EF;
+    border-color: #7B32EF;
+    width: 250px;
+    height: 40px;
+}
+.btn-tel-modal:hover{
+    background-color: #7B32EF;
+    color: #fff;
+    border-color: #7B32EF;
+}
+.btn-tel{
+    background-color: #7B32EF;
+    border-color: #7B32EF;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+}
+.btn-tel:hover{
+    background-color: #7B32EF;
+    color: #fff;
+    border-color: #7B32EF;
+}
+.btn-faqs{
+    background-color: #9D62D9;
+    border-color: #9D62D9;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+}
+.btn-faqs:hover{
+    background-color: #9D62D9;
+    color: #fff;
+    border-color: #9D62D9;
+}
+/*TERMINA BOTONES*/
+/*COLLAPSE DE FAQS*/
+.collapsible {
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-top-color: #fff;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+    transition: max-height 0.2s ease-out;
+    background: none;
+  }
+  .content p{
+      margin-top: 10px;
+      color: white;
+  }
+/*TERMINA COLLAPSE DE FAQS*/

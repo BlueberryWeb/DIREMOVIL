@@ -14,41 +14,43 @@
 <body>
 
     <!--HEADER-->
-    <section class="showcase-planes" id="showcase">
-        <header class="navbar navbar-expand-lg">
-            <a class="navbar-brand">
-                <img src="img/Logo-KLUANE-Bco.gif" alt="DIRÉ MOVIL" class="img-fluid" id="logo-header"/></a>
-                <button class="btn btn-outline " onclick="menu()">
-                    <i class="fa-solid fa-bars"></i>
+    <header class="header">
+        <nav class="navbar navbar-light pt-5">
+            <div class="container">
+            <a class="navbar-brand">Navbar</a>
+            <form class="d-flex">
+                <button class="btn btn-link" type="submit" onclick="menu()">
+                    <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
                 </button>
-        </header>
-        
-    </section>
-    <div class="container">
-        <div class="d-flex d-flex justify-content-center imagen-header">
-            <img src="img/header-planes.png" alt="DIRÉ MOVIL" class="img-fluid position-absolute fixed-bottom"/>
+            </form>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <img src="img/header-planes.png" alt="DIRÉ MOVIL" class="img-fluid "/>
+            </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <h1 class="text-center"><b>CON MUY POCO PUEDES DECIR MUCHO</b> </h1>
+        <div class="row d-flex justify-content-center pt-5">
+            <h1 class="text-center "><b>CON MUY POCO PUEDES DECIR MUCHO</b> </h1>
         </div>
-    </div>
+    </header>
     <!--PLANES-->
-    <div class="container-fluid fondo-azul">
+    <div class="container-fluid fondo-azul pt-5">
         <div class="container">
             <div class="row">
-                <h1 class="text-center"><b>PLANES</b></h1>
+                <h1 class="text-center display-2 pb-5"><b>PLANES</b></h1>
             </div>
-            <div class="row">
+            <div class="row pt-5">
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
                     <img src="img/plan-dire-20.png" alt="DIRE 20" class="img-fluid"/>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
-                    <h2 class="text-center"><b>DETALLES DEL PLAN</b></h2>
-                    <p>Vigencia de 30 días</p>
-                    <p>Continúa navegando aún cuando hayas consumido los <br>
+                    <h2 class="text-center "><b>DETALLES DEL PLAN</b></h2>
+                    <p class="pt-5" >Vigencia de 30 días</p>
+                    <p class="pt-2">Continúa navegando aún cuando hayas consumido los <br>
                     20,000 Mb a máxima velocidad. Revisa la política de uso justo.</p>
-                    <p><b>Cobertura en EUA y Canadá</b></p>
-                    <p>5,000 MB para uso de roaming <br>
+                    <p class="pt-2"><b>Cobertura en EUA y Canadá</b></p>
+                    <p class="pt-2">5,000 MB para uso de roaming <br>
                     750 minutos para uso en roaming <br>
                     500 SMS para uso en roaming</p>
                 </div>
@@ -85,7 +87,7 @@
         </div>
     </div>
      <!--TELEFONÍA AL LÍMITE-->
-     <div class="container-fluid fondo-azul telefonia-limite pt-5">
+    <div class="container-fluid fondo-azul telefonia-limite pt-5">
         <div class="container pt-5">
             <div class="row d-flex justify-content-center pt-5">
                 <img src="img/vivir-telefonia-limite.png" alt="DIRÉ MOVIL" class="img-fluid"/>
@@ -99,117 +101,106 @@
     <div class="container-fluid fondo-azul comunicate pt-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <h1 class="text-center"><b>COMUNÍCATE YA</b></h1>
-                <h5 class="text-center">Si tienes alguna duda o estás experimentando dificultades con tu línea te <br> podemos ayudar</h5>
+                <h1 class="text-center display-3"><b>COMUNÍCATE YA</b></h1>
+                <h5 class="text-center pt-3">Si tienes alguna duda o estás experimentando dificultades con tu línea te <br> podemos ayudar</h5>
             </div>
             <div class="text-center pt-5">
-                <button class="btn-primary ">
-                    <a href="tel:">0000000000000</a>
-                </button><button class="btn-primary">
-                    <a href="#">FAQ'S</a>
-                </button>
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                        <div class="">
+                            <button class="btn btn-primary btn-tel">
+                                <a href="tel:"><h5><b>00 00 0000 0000</b></h5> </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                        <button class="btn btn-primary btn-faqs">
+                            <a href="faqs.html"><h5><b>FAQ'S</b></h5> </a>
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                </div> 
             </div>
         </div>
     </div>
     <!--SUSCRIBETE-->
-    <div class="container-fluid fondo-azul">
-        <div class="container">
-            <div class="row">
+    <div class="container-fluid fondo-azul pt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row pt-5">
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
                     <img src="img/newsletter.png" alt="DIRÉ MOVIL" class="img-fluid"/>
                 </div>
-                <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5">
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
                     <h1 class="pt-5"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
-                    <h3 class="pt-5">Conoce más de Diré y entérate de nuestras promociones.</h3>
+                    <h5 class="pt-5">Conoce más de Diré y entérate de nuestras promociones.</h5>
                     <div class="input-group pt-5">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        <input type="text" class="form-control" placeholder="ejemplo@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon3">
+                        <span class="input-group-text" id="basic-addon3">Suscribete</span>
                     </div>
                     
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <img src="" alt="DIRÉ MOVIL" class="img-fluid"/>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-12 pt-3">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SOMOS</a></li>
-                        <li><a href="#">PLANES</a></li>
-                        <li><a href="#">TÉRMINOS</a></li>
-                        <li><a href="#">POLITICAS</a></li>
-                        <li><a href="#">AVISO DE PRIVACIDAD</a></li>
-                        <li><a href="#"> CONTACTO</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
-                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="IG: DIRÉ MOVIL" class="img-fluid"/>
-                </div>
-                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="FB: DIRÉ MOVIL" class="img-fluid"/>
-                </div>
-                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="TIK TOK: DIRÉ MOVIL" class="img-fluid"/>
-                </div>
-                <div class="col-12 col-lg-2 col-md-12 col-sm-12">
-                    <h4>@diremovil</h4>
-                </div>
-                <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
-            </div>
-            <div class="text-start pb-4">
-                <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" class="img-fluid"/>
-            </div>
-        </div>
-    </footer>
+   
+   
+    
     
 
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <img src="" alt="DIRÉ MOVIL" class="img-fluid"/>
+        <div class="container-fluid">
+            <div class="text-center pt-4 pb-4">
+                <img src="img/Logo-footer.png" alt="DIRÉ MOVIL" class="img-fluid logo-footer"/>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-12 pt-3">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SOMOS</a></li>
-                        <li><a href="#">PLANES</a></li>
-                        <li><a href="#">TÉRMINOS</a></li>
-                        <li><a href="#">POLITICAS</a></li>
-                        <li><a href="#">AVISO DE PRIVACIDAD</a></li>
-                        <li><a href="#"> CONTACTO</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="IG: DIRÉ MOVIL" class="img-fluid"/>
+                    <a href="index.html"><h5><b>HOME</b></h5> </a>
                 </div>
                 <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="FB: DIRÉ MOVIL" class="img-fluid"/>
+                    <a href="somos.html"><h5><b>SOMOS</b></h5> </a>
                 </div>
                 <div class="col-12 col-lg-1 col-md-12 col-sm-12">
-                    <img src="" alt="TIK TOK: DIRÉ MOVIL" class="img-fluid"/>
+                    <a href="planes.html"><h5><b>PLANES</b></h5> </a>
+                </div>
+                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                    <a href="#"><h5><b>TÉRMINOS</b></h5></a>
+                </div>
+                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                    <a href="#"><h5><b>POLITICAS</b></h5></a>
                 </div>
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12">
-                    <h4>@diremovil</h4>
+                    <a href="#"><h5><b>AVISO DE PRIVACIDAD</b></h5></a>
                 </div>
-                <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                    <a href="#"><h5><b>CONTACTO</b></h5></a>
+                </div>
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             </div>
-            <div class="text-start pb-4">
-                <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" class="img-fluid"/>
+            <div class="container">
+                <div class="row pt-4 redes d-flex justify-content-center">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                    <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                        <img src="img/Icono-IG.png" alt="IG: DIRÉ MOVIL" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                        <img src="img/Icono-FB.png" alt="FB: DIRÉ MOVIL" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-1 col-md-12 col-sm-12">
+                        <img src="img/Icono-Tik-tok.png" alt="TIK TOK: DIRÉ MOVIL" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-12 col-sm-12">
+                        <h4>@diremovil</h4>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
+                </div>
+                <div class="text-start pb-4">
+                    <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" class="img-fluid"/>
+                </div>
             </div>
-        </div>
+        </div> 
     </footer>
     
         
