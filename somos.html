@@ -13,20 +13,52 @@
 </head>
 <body>    
     <!--HEADER-->
-    <header class="header-somos">
+    <header class="header-somos" id="showcase">
         <nav class="navbar navbar-light pt-5">
             <div class="container">
-            <a class="navbar-brand">Navbar</a>
-            <form class="d-flex">
-                <button class="btn btn-link" type="submit" onclick="menu()">
-                    <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
-                </button>
-            </form>
+                <a class="navbar-brand">Navbar</a>
+                <div class="d-flex">
+                    <button class="btn btn-link" type="submit" onclick="menu()">
+                        <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
+                    </button>
+                </div>
             </div>
         </nav>
         <div class="container">
             <div class="row d-flex justify-content-center pt-5">
-                <h1 class="text-center display-3"><b>CON MUY POCO PUEDES <br> DECIR MUCHO</b></h1>
+                <h1 class="text-center display-3 animacion-titulos"><b>CON MUY POCO PUEDES <br> DECIR MUCHO</b></h1>
+            </div>
+        </div>
+    </header>
+     <!--MENU-->
+    <header id="menu">
+        <div class="container-fluid menu wp-animated" data-animation="fadeInRight">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+                    <div class="">
+                        <img src="img/Logo-bco.png" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
+                        <i class="fa-solid fa-xmark btn-menu d-block d-sm-block d-md-none" onclick="cerrar()"></i>
+                    </div>
+                    <img src="img/Vector.png" alt="DIRÉ IG" class="img-fluid icono-redes pt-5"/> 
+                    <img src="img/Vector-1.png" alt="DIRÉ FB" class="img-fluid icono-redes pt-5"/> 
+                </div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5 ">
+                    <ul class="pt-5">
+                        <li><h5 class="pt-5"><b>HOME</b></h5></li>
+                        <li><h5 class="pt-5"><b>¿POR QUÉ DIRÉ?</b></h5></li>
+                        <li><h1 class="display-2 pt-5"><b>PLANES</b></h1></li>
+                        <li><h5 class="pt-5"><b>FAQ'S</b></h5></li>
+                        <li><h5 class="pt-5"><b>TÉRMINOS</b></h5></li>
+                        <li><h5 class="pt-5"><b>POLÍTICAS</b></h5></li>
+                        <li><h5 class="pt-5 pb-5"><b>AVISO DE PRIVACIDAD</b></h5></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 fondo-menu">
+                    <div class="row justify-content-end pt-3 me-md-3">
+                        <i class="fa-solid fa-xmark btn-menu" onclick="cerrar()"></i>
+                        
+                    </div>
+                </div>       
             </div>
         </div>
         
@@ -35,12 +67,12 @@
     <!--POR QUÉ DIRÉ-->
     <div class="container-fluid fondo-azul pt-5">
         <div class="container pt-5">
-            <div class="row pt-5">
+            <div class="row pt-5 wp-animated-group">
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
-                    <h1 class="display-2"><b>¿POR QUÉ DIRÉ?</b></h1>
+                    <h1 class="display-2 wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>¿POR QUÉ DIRÉ?</b></h1>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12">
-                    <p class="h4">Somos <b>una compañía de telefonía móvil enfocada en <br>
+                    <p class="h4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">Somos <b>una compañía de telefonía móvil enfocada en <br>
                     conectar personas a través de nuestro servicio.</b> Nos <br>
                     distingue la calidad, el soporte y la accesibilidad que <br>
                     tenemos con nuestros usuarios ofreciendo planes que <br>
@@ -49,42 +81,42 @@
                 </div>
             </div>
             <div class="row pt-5">
-                <h1 class="text-center pt-5 pb-5"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h1>
+                <h1 class="text-center pt-5 pb-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h1>
             </div>
         </div>
     </div>
     <!--CÓMO FUNCIONA-->
-    <div class="container-fluid fondo-azul pt-5">
+    <div class="container-fluid fondo-azul pt-5 como-funciona">
         <div class="container pt-5">
             <div class="row pt-5">
-                <h1 class="text-center display-2"><b>¿CÓMO FUNCIONA?</b></h1>
-                <h4 class="text-center pt-5">En los siguientes pasos te mostramos cómo vivir tu experiencia al límite:</h4>
+                <h1 class="text-center display-2 wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>¿CÓMO FUNCIONA?</b></h1>
+                <h4 class="text-center pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">En los siguientes pasos te mostramos cómo vivir tu experiencia al límite:</h4>
+            </div>
+            <div class="row pt-5 wp-animated-group">
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
+                    <h1 class="text-center wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>01</b></h1>
+                    <h2 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s"><b>ADQUIERE TU SIM</b></h2>
+                    <h5 class="text-center texto-morado wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" data-bs-toggle="modal" data-bs-target="#adquiere-sim">Ver más</h5>
+                </div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
+                    <h1 class="text-center wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>02</b></h1>
+                    <h2 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s"><b>ACTIVA TU LÍNEA</b></h2>
+                    <h5 class="text-center texto-morado wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" data-bs-toggle="modal" data-bs-target="#activa-linea">Conoce más</h5>
+                </div>
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             </div>
             <div class="row pt-5">
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
-                    <h1 class="text-center"><b>01</b></h1>
-                    <h2 class="text-center"><b>ADQUIERE TU SIM</b></h2>
-                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#adquiere-sim">Ver más</h5>
+                    <h1 class="text-center wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>03</b></h1>
+                    <h2 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s"><b>RECARGA TU PLAN</b></h2>
+                    <h5 class="text-center texto-morado wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" data-bs-toggle="modal" data-bs-target="#recarga-plan">Empieza aqui</h5>
                 </div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
-                    <h1 class="text-center"><b>02</b></h1>
-                    <h2 class="text-center"><b>ACTIVA TU LÍNEA</b></h2>
-                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#activa-linea">Conoce más</h5>
-                </div>
-                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
-            </div>
-            <div class="row pt-5">
-                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
-                    <h1 class="text-center"><b>03</b></h1>
-                    <h2 class="text-center"><b>RECARGA TU PLAN</b></h2>
-                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#recarga-plan">Empieza aqui</h5>
-                </div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5">
-                    <h1 class="text-center"><b>04</b></h1>
-                    <h2 class="text-center"><b>DISFRUTA DIRÉ</b></h2>
-                    <h5 class="text-center texto-morado" data-bs-toggle="modal" data-bs-target="#disfruta-dire">Ver más</h5>
+                    <h1 class="text-center wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>04</b></h1>
+                    <h2 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s"><b>DISFRUTA DIRÉ</b></h2>
+                    <h5 class="text-center texto-morado wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" data-bs-toggle="modal" data-bs-target="#disfruta-dire">Ver más</h5>
                 </div>
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             </div>
@@ -140,7 +172,7 @@
                         <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5">
                             <div class="text-end">
                                 <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"> 
-                                    <img src="img/btn-close.png" alt="Cerrar" class="img-fluid btn-modal"/>
+                                    <i class="fa-solid fa-xmark"></i>
                                 </button>
                             </div>
                             <h1 class="text-center display-3 pt-5"><b>ACTIVA TU LÍNEA</b></h1>
@@ -264,36 +296,39 @@
     <!--TERMINA MODALES-->
     <!--TELEFONÍA AL LÍMITE-->
     <div class="container-fluid fondo-azul telefonia-limite pt-5">
-        <div class="container pt-5">
-            <div class="row d-flex justify-content-center pt-5">
+        <div class="container pt-5 wp-animated-group">
+            <div class="row d-flex justify-content-center pt-5 wp-animated" data-animation="fadeInDown" data-animation-duration="5s">
                 <img src="img/vivir-telefonia-limite.png" alt="DIRÉ MOVIL" class="img-fluid"/>
             </div>
             <div class="row d-flex justify-content-center pt-5">
-                <h2 class="text-center"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h2>
+                <h2 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h2>
             </div>
         </div>
     </div>
     <!--COMUNICATE YA-->
     <div class="container-fluid fondo-azul comunicate pt-5">
-        <div class="container">
+        <div class="container wp-animated-group">
             <div class="row d-flex justify-content-center">
-                <h1 class="text-center display-3"><b>COMUNÍCATE YA</b></h1>
-                <h5 class="text-center pt-3">Si tienes alguna duda o estás experimentando dificultades con tu línea te <br> podemos ayudar</h5>
+                <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>COMUNÍCATE YA</b></h1>
+                <h5 class="text-center pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">Si tienes alguna duda o estás experimentando dificultades con tu línea te <br> podemos ayudar</h5>
             </div>
             <div class="text-center pt-5">
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
                     <div class="col-12 col-lg-3 col-md-12 col-sm-12">
-                        <div class="">
+                        <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                             <button class="btn btn-primary btn-tel">
                                 <a href="tel:"><h5><b>00 00 0000 0000</b></h5> </a>
                             </button>
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 col-md-12 col-sm-12">
-                        <button class="btn btn-primary btn-faqs">
-                            <a href="faqs.html"><h5><b>FAQ'S</b></h5> </a>
-                        </button>
+                        <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
+                            <button class="btn btn-primary btn-faqs">
+                                <a href="faqs.html"><h5><b>FAQ'S</b></h5> </a>
+                            </button>
+                        </div>
+                        
                     </div>
                     <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
                 </div> 
@@ -303,14 +338,14 @@
     <!--SUSCRIBETE-->
     <div class="container-fluid fondo-azul pt-5 pb-5">
         <div class="container pt-5">
-            <div class="row pt-5">
-                <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="row pt-5 wp-animated-group">
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-duration="5s">
                     <img src="img/newsletter.png" alt="DIRÉ MOVIL" class="img-fluid"/>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
-                    <h1 class="pt-5"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
-                    <h5 class="pt-5">Conoce más de Diré y entérate de nuestras promociones.</h5>
-                    <div class="input-group pt-5">
+                    <h1 class="pt-5 wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
+                    <h5 class="pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">Conoce más de Diré y entérate de nuestras promociones.</h5>
+                    <div class="input-group pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                         <input type="text" class="form-control" placeholder="ejemplo@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon3">
                         <span class="input-group-text" id="basic-addon3">Suscribete</span>
                     </div>
@@ -384,5 +419,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="lib/easy-waypoint-animate.js"></script>
+    <script src="lib/jquery.waypoints.js"></script>
 </body>
 </html>

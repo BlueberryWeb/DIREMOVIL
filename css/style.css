@@ -1,9 +1,15 @@
 /*COLORES
-AZUL: #080640
-NEGRO: #121D26
-LILA: #7B32EF
-LILA BOTONES: #9D62D9
+AZUL-MORADO: #24135F
+NEGRO: #212721
+LILA: #8246AF
 */
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("fonts/Proxima_Nova_Font.otf");
+}
+body{
+    font-family: "Proxima Nova";
+}
 a{
     color: white;
     text-decoration: none;
@@ -25,36 +31,8 @@ li{
 
 /*COMIENZAN FONDOS DE LAS PESTAÑAS*/
 .header{
-    background-color: #080640;
+    background-color: #24135F;
     color: #fff;
-}
-.showcase-menu{
-    position: relative;
-    right: 0;
-    width: 100%;
-    min-height: 90vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    color: #fff;
-    z-index: 2;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #080640;
-
-}
-.showcase-menu header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 .header-somos{
     width: 100%;
@@ -75,7 +53,7 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right top, #7B32EF);
+    background: linear-gradient(to right top, #8246AF);
     z-index: -1;
 }
 .header-somos h1{
@@ -99,33 +77,8 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #080640;
+    background: #24135F;
     mix-blend-mode: overlay;
-}
-.showcase-planes{
-    position: relative;
-    right: 0;
-    width: 100%;
-    min-height: 90vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    color: #fff;
-    z-index: 2;
-    background-color: #080640;
-}
-.showcase-planes header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 .fondo-morado{
     background-image: url("../img/fondo-modales.png");
@@ -140,20 +93,24 @@ li{
     background-size: cover;
 }
 .fondo-azul{
-    background-color: #080640;
+    background-color: #24135F;
     color: white;
 }
-/*.fondo-menu{
+.fondo-menu{
     background-image: url("../img/menu-fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
-}*/
+}
 .menu{
-    background-color: #080640;
+    background-color: #24135F;
+    color: #fff;
     width: 100%;
     height: 90vh;
 }
 /*TERMINAN FONDOS DE LAS PANTALLAS*/
+#menu{
+    display: none;
+}
 .planes{
     text-align: center;
 }
@@ -172,6 +129,9 @@ li{
 }
 .comunicate{
 
+}
+.como-funciona h5{
+    cursor: pointer;
 }
 .logo-footer{
     max-width: 150px;
@@ -205,18 +165,14 @@ li{
     margin-top: 50px;
     margin-left: 50px;
 }
-.btn-modal{
-    margin-left: -80px;
-    color: #fff!important;
-}
 .modal-body{
     padding: 0;
 }
 .texto-morado{
-    color: #7B32EF;
+    color: #8246AF;
 }
 footer{
-    background-color: #7B32EF;
+    background-color: #8246AF;
     color: white;
     text-align: center;
 }footer li{
@@ -228,46 +184,50 @@ footer{
     border-radius: 0;
 }
 .input-group-text{
-    background-color: #7B32EF;
+    background-color: #8246AF;
     border-radius: 0;
-    border-color: #7B32EF;
+    border-color: #8246AF;
     color: #fff;
 }
 /*BOTONES*/
+.btn-modal{
+    margin-left: -80px;
+    color: #fff!important;
+}
 .btn-menu{
     max-width: 40px;
 }
 .conoce{
-    background-color: #7B32EF;
-    border-color: #7B32EF;
+    background-color: #8246AF;
+    border-color: #8246AF;
     border-radius: 5px;
     width: 150px;
 }
 .conoce:hover{
-    background-color: #7B32EF;
+    background-color: #8246AF;
 }
 .btn-tel-modal{
-    background-color: #7B32EF;
-    border-color: #7B32EF;
+    background-color: #8246AF;
+    border-color: #8246AF;
     width: 250px;
     height: 40px;
 }
 .btn-tel-modal:hover{
-    background-color: #7B32EF;
+    background-color: #8246AF;
     color: #fff;
-    border-color: #7B32EF;
+    border-color: #8246AF;
 }
 .btn-tel{
-    background-color: #7B32EF;
-    border-color: #7B32EF;
+    background-color: #8246AF;
+    border-color: #8246AF;
     color: #fff;
     width: 250px;
     height: 40px;
 }
 .btn-tel:hover{
-    background-color: #7B32EF;
+    background-color: #8246AF;
     color: #fff;
-    border-color: #7B32EF;
+    border-color: #8246AF;
 }
 .btn-faqs{
     background-color: #9D62D9;
@@ -316,4 +276,57 @@ footer{
       margin-top: 10px;
       color: white;
   }
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: #fff;
+    font-weight: bold;
+  }
 /*TERMINA COLLAPSE DE FAQS*/
+.icono-redes{
+    margin-top: 180px;
+    margin-left: 50px;
+    max-width: 30px;
+}
+/*ANIMACIONES*/
+.animacion-titulos{
+    display: inline-block;
+    animation: fadeIn;
+    animation-duration: 10s;
+}
+/*TERMINA ANIMACIONES*/
+@media screen and (max-width:400px){
+    .logo-modal{
+        max-width: 150px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .btn-menu{
+        max-width: 20px;
+        margin-left: 320px;
+        margin-top: -25px;
+    } 
+}
+@media screen and (max-width:500px){
+    .logo-modal{
+        max-width: 180px;
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    .btn-menu{
+        max-width: 20px;
+        margin-left: 350px;
+        margin-top: -25px;
+    } 
+}
+@media screen and (max-width:600px){
+    .logo-modal{
+        max-width: 180px;
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    .btn-menu{
+        max-width: 20px;
+        margin-left: 350px;
+        margin-top: -25px;
+    } 
+}
