@@ -20,6 +20,9 @@ a:hover{
 li{
     list-style: none;
 }
+#logo-header{
+    max-width: 200px;
+}
 .fa-xmark{
     color: white;
     font-size: 2rem;
@@ -114,6 +117,9 @@ li{
 .planes{
     text-align: center;
 }
+.plan{
+    opacity: 0.5;
+}
 .activa-linea{
     text-align: center;
     padding-bottom: 300px;
@@ -190,9 +196,7 @@ footer{
     color: #fff;
 }
 /*BOTONES*/
-.btn-modal{
-    margin-left: -80px;
-    color: #fff!important;
+.btn-modal{margin-right: 40px;
 }
 .btn-menu{
     max-width: 40px;
@@ -293,30 +297,98 @@ footer{
     animation: fadeIn;
     animation-duration: 10s;
 }
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    background-image: url("../img/luz.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*TERMINA ANIMACIONES*/
-@media screen and (max-width:400px){
+.opcion:hover{
+    background-image: url("../img/luz.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width:300px){
     .logo-modal{
         max-width: 150px;
         margin-top: 20px;
         margin-left: 0;
     }
-    .btn-menu{
-        max-width: 20px;
+    .btn-menu-cerrar{
+        margin-left: 280px;
+        margin-top: -20px;
+    }
+    .header-somos h1{
+        margin-top: 280px;
+    }
+    .icono-redes{
+        margin-top: 0;
+    }
+    .menu{
+        height: 140vh;
+    }
+}
+@media  screen and (max-width:400px){
+    .logo-modal{
+        max-width: 150px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .btn-menu-cerrar{
         margin-left: 320px;
-        margin-top: -25px;
-    } 
+        margin-top: -20px;
+    }
+    .header-somos h1{
+        margin-top: 280px;
+    }
+    .icono-redes{
+        margin-top: 0;
+    }
+    .menu{
+        height: 140vh;
+    }
+    .sim{
+        max-width: 300px;
+        margin-left: 0;
+    }
+    .iconos-activa{
+        margin-top: 250px;
+    }
+    .celular-modal{
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    .cel-modal{
+        max-width: 300px;
+        margin-left: 0;
+    }
 }
 @media screen and (max-width:500px){
     .logo-modal{
         max-width: 180px;
         margin-top: 40px;
         margin-left: 5px;
-    }
-    .btn-menu{
-        max-width: 20px;
-        margin-left: 350px;
-        margin-top: -25px;
     } 
+    .btn-menu-cerrar{
+        margin-left: 320px;
+        margin-top: -20px;
+    }
+    .header-somos h1{
+        margin-top: 280px;
+    }
+    .icono-redes{
+        margin-top: 0;
+    }
+    .menu{
+        height: 140vh;
+    }
 }
 @media screen and (max-width:600px){
     .logo-modal{
@@ -324,9 +396,57 @@ footer{
         margin-top: 40px;
         margin-left: 5px;
     }
-    .btn-menu{
-        max-width: 20px;
-        margin-left: 350px;
-        margin-top: -25px;
-    } 
+    .btn-menu-cerrar{
+        margin-left: 450px;
+        margin-top: -40px;
+    }
+    .header-somos h1{
+        margin-top: 280px;
+    }
+    .icono-redes{
+        margin-top: 0;
+    }
+    .menu{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:700px){
+    .logo-modal{
+        max-width: 180px;
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    .btn-menu-cerrar{
+        margin-left: 450px;
+        margin-top: -40px;
+    }
+    .header-somos h1{
+        margin-top: 280px;
+    }
+    .icono-redes{
+        margin-top: 0;
+    }
+    .menu{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:800px){
+    .logo-modal{
+        max-width: 180px;
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    .btn-menu-cerrar{
+        margin-left: 600px;
+        margin-top: -40px;
+    }
+    .header-somos h1{
+        margin-top: 280px;
+    }
+    .icono-redes{
+        margin-top: 0;
+    }
+    .menu{
+        height: 120vh;
+    }
 }
