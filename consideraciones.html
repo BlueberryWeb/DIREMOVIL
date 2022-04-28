@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" href="img/fabicon.svg"/>
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>DIRÉ MOVIL | CONSIDERACIONES Y TÉRMINOS</title>
 </head>
 <body>
@@ -32,10 +33,16 @@
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12">
                     <div class="">
                         <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
-                        <i class="fa-solid fa-xmark btn-menu-cerrar d-block d-sm-block d-md-none" onclick="cerrar()"></i>
+                        <i class="fa-solid fa-xmark d-block d-sm-block d-md-none" id="men-cerrar" onclick="cerrar()"></i>
                     </div>
-                    <img src="img/Vector.png" alt="DIRÉ IG" class="img-fluid icono-redes pt-5"/> 
-                    <img src="img/Vector-1.png" alt="DIRÉ FB" class="img-fluid icono-redes pt-5"/> 
+                    <div class="ps-3">
+                        <img src="img/Vector.png" alt="DIRÉ IG" class="img-fluid icono-redes pt-5"/> 
+                        <img src="img/Vector-1.png" alt="DIRÉ FB" class="img-fluid icono-redes pt-5"/>
+                    </div>
+                    
+                    <div class=" pt-5 ps-3">
+                        <img src="img/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry" class="img-fluid icono-bb"/>
+                    </div> 
                 </div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5 ">
                     <ul class="pt-5">
@@ -51,7 +58,7 @@
                         </li>
                         <li>
                             <a href="planes.html">
-                                <h1 class="display-2 pt-5"><b>PLANES</b></h1>
+                                <h1 class="display-2 pt-5 bold"><b>PLANES</b></h1>
                             </a>
                         </li>
                         <li>
@@ -71,7 +78,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 d-none d-sm-none d-md-block">
                     <video muted autoplay loop class="video-bg_video">
                         <source src="vid/Video_Menú.mp4" type="video/mp4" >
                     </video>
@@ -84,55 +91,134 @@
     </header>
     <div class="container-fluid fondo-azul">
         <div class="container">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center pt-5">
                 <h1 class="text-center display-2 animacion-titulos"><b>CONSIDERACIONES Y TÉRMINOS </b></h1>
             </div>
             <div class="row pt-5 wp-animated-group">
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 <div class="col-12 col-lg-8 col-md-12 col-sm-12">
-                    <h3 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>CONSIDERACIONES DEL PROCESO DE PORTABILIDAD</b></h3>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s" >El proceso de portabilidad no tiene ningún costo. No se puede obligar o someter al usuario final a que inicie un <br>
+                    <h3 class="wp-animated bold " data-animation="fadeInDown" data-animation-duration="5s"><b>CONSIDERACIONES DEL PROCESO DE PORTABILIDAD</b></h3>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s" >
+                        El proceso de portabilidad no tiene ningún costo. No se puede obligar o someter al usuario final a que inicie un <br>
                         proceso de portabilidad. Para que el proceso de portabilidad se pueda concluir de manera exitosa y sin <br>
                         contratiempos es necesario entregar la información completa y correcta desde el inicio del trámite. En aquellos casos <br>
                         en el que el proceso de portabilidad fue rechazado por algún dato erroneo, <b class="texto-morado">el equipo de DIRÉ contactará al usuario <br>
-                        final para el seguimiento y que el proceso se pueda completar. </b></p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" >Es fundamental PROPORCIONAR la información correcta y completa para que el proceso sea realizado en los lapsos <br>
-                        de tiempo correspondiente.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s" ><b class="texto-morado">Si en el proceso de portabilidad no se ingreso la información correcta y completa</b> y el equipo de DIRÉ no tiene <br>
+                        final para el seguimiento y que el proceso se pueda completar. </b>
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" >
+                        Es fundamental PROPORCIONAR la información correcta y completa para que el proceso sea realizado en los lapsos <br>
+                        de tiempo correspondiente.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s" >
+                        <b class="texto-morado">Si en el proceso de portabilidad no se ingreso la información correcta y completa</b> y el equipo de DIRÉ no tiene <br>
                         contacto con el usuario final, el proceso quedará rechazado y detenido hasta que se pueda obtener una actualización <br>
-                        por parte del operador.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s" >El proceso de portabilidad para personas físicas requiere de ciertos datos y validaciones.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s" >El proceso de portabilidad para personas morales es distinto al de persona física.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s" data-animation-duration="5s" >En cuanto la portabilidad es aplicada, el número provisional pierde su función y es ingresado a los procesos <br>
+                        por parte del operador.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s" >
+                        El proceso de portabilidad para personas físicas requiere de ciertos datos y validaciones.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s" >
+                        El proceso de portabilidad para personas morales es distinto al de persona física.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s" data-animation-duration="5s" >
+                        En cuanto la portabilidad es aplicada, el número provisional pierde su función y es ingresado a los procesos <br>
                         regulatorios de nuestro proveedor de red. Para cualquier duda o validación en el proceso de portabilidad, el correo <br>
-                        de consulta es <a href="mailto:">hola@diremovil.com</a></p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.4s" data-animation-duration="5s" >Cuando la portabilidad es completada este proceso queda concluido, por lo tanto en caso de presentar algún <br>
-                        inconveniente en el uso del servicio es necesario contactarse con el equipo de soporte de DIRÉ.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.6s" data-animation-duration="5s" >El equipo de DIRÉ es responsable de validar y procesar la información con los datos que se recibieron por parte del <br>
-                        USUARIO, los datos recibidos serán tratados con confidencialidad y privacidad.</p>
+                        de consulta es <a href="mailto:">hola@diremovil.com</a>
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.4s" data-animation-duration="5s" >
+                        Cuando la portabilidad es completada este proceso queda concluido, por lo tanto en caso de presentar algún <br>
+                        inconveniente en el uso del servicio es necesario contactarse con el equipo de soporte de DIRÉ.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.6s" data-animation-duration="5s" >
+                        El equipo de DIRÉ es responsable de validar y procesar la información con los datos que se recibieron por parte del <br>
+                        USUARIO, los datos recibidos serán tratados con confidencialidad y privacidad.
+                    </p>
                 </div>
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div> 
+            </div>
+            <div class="row pt-5 pb-2  wp-animated-group">
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
+                <div class="col-12 col-lg-8 col-md-12 col-sm-12">
+                    <h3 class="wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s"><b>CONSIDERACIONES DEL PROCESO DE ACTIVACIÓN</b></h3>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s" >
+                        No omitir el paso de validación de compatibilidad ya que esto permite una correcta función del servicio posterior <br> a la activación.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" >
+                        Es fundamental agregar la información necesaria para que la activación pueda ser realizada de manera correcta y <br> completa.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
+                        La información que es solicitada debe ser verdadera ya que para otro tipo de procespo si se detecta que fue alterada o <br> modificada
+                        generará que la solicitud no pueda ser atendida o en su defecto demore más tiempo del contemplado.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s">
+                        En cuanto la sim es activada inicia la vigencia del paquete con el que se haya activado, esto es independiente al <br> tiempo en el que se 
+                        empezó a utilizar el servicio.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">
+                        Si primero se ingresa la sim al dispositivo antes de activarse es probable que se generen errores durante la activación.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s" data-animation-duration="5s">
+                       Una sim que ya fue activada no podrá volverse a activar por segunda ocasión.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.4s" data-animation-duration="5s">
+                        Es importante que si la sim presenta un daño físico (rota, manchada, mojada o incluso quemada) no se active. Lo <br> anterior, se debe a que 
+                        el proceso de activación se realizará en sistema pero la sim no será funcional físicamente.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.6s" data-animation-duration="5s">
+                        Una vez que la sim ha sido activada no es posible revertir el proceso.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.8s" data-animation-duration="5s">
+                        Si el proceso se completó de manera exitosa y el usuario no cuenta con beneficios es necesario validar con el equipo <br> de soporte de Diré.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="2s" data-animation-duration="5s">
+                        La activación de línea solo se realizará a mayores de edad.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="2.2s" data-animation-duration="5s">
+                        La activación de línea se puede realizar tanto a personas físicas como a personas morales.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
+                
+                
             </div>
             <div class="row pt-5 pb-5  wp-animated-group">
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 <div class="col-12 col-lg-8 col-md-12 col-sm-12">
-                    <h3 class="wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>CONSIDERACIONES DEL PROCESO POR RECARGA</b></h3>
-                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s" >Después de que la línea es recargada y se ejecuten todos los procesos automáticos de manera correcta pueden, <br>
-                    transcurrir de 0 a 10 minutos máximo para la aplicación de los beneficios.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" >Para que una línea se pueda recargar ya tuvo que haber pasado por un proceso de activación en línea.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">No es posible realizar recarga a una línea que no ha sido activada.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s">Se puede ejecutar más de 1 recarga para la misma línea sin importar la vigencia de la primera recarga.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">Si se aplica más de 1 recarga los beneficios se acumularán durante la vigencia de la primera recarga.</p>
-                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s" data-animation-duration="5s">En caso de que la línea se presente un estado de bloqueo o suspensión la transacción no se realizará o en su defecto si <br>
-                    la transacción se ejecuta los beneficios no se aplicarán.</p>
-                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.4s" data-animation-duration="5s">En cuanto la línea es recargada y los beneficios son aplicados no puede revertirse este proceso. La vigencia se <br>
-                    mantendrá conforme al paquete recargado, no es posible reducir o aumentar tiempo de vigencia de la recarga del <br>
-                    paquete seleccionado.</p>
-                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.6s" data-animation-duration="5s">Cuando los beneficios son aplicados comienza la viegencia de la recarga hasta las 23:59:59 del último día que se <br>
-                    termina la vigencia.</p>
-                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.8s" data-animation-duration="5s">Para evitar una suspensión o inactividad de la línea por falta de uso es importante ejecutar una recarga por mucho <br>
-                    cada 45 días. Si el proceso se completó de manera exitosa y el usuario no cuenta con beneficios de su recarga es <br>
-                    necesario validar con el equipo de soporte de DIRÉ A TRAVÉS DE NUESTRO CALL CENTER <a href="tel:">00 00 0000 0000</a></p>
+                    <h3 class="wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s"><b>CONSIDERACIONES DEL PROCESO POR RECARGA</b></h3>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s" >
+                        Después de que la línea es recargada y se ejecuten todos los procesos automáticos de manera correcta pueden, <br>
+                    transcurrir de 0 a 10 minutos máximo para la aplicación de los beneficios.
+                </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" >
+                        Para que una línea se pueda recargar ya tuvo que haber pasado por un proceso de activación en línea.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
+                        No es posible realizar recarga a una línea que no ha sido activada.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s">
+                        Se puede ejecutar más de 1 recarga para la misma línea sin importar la vigencia de la primera recarga.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">
+                        Si se aplica más de 1 recarga los beneficios se acumularán durante la vigencia de la primera recarga.
+                    </p>
+                    <p class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.2s" data-animation-duration="5s">
+                        En caso de que la línea se presente un estado de bloqueo o suspensión la transacción no se realizará o en su defecto si <br>
+                        la transacción se ejecuta los beneficios no se aplicarán.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.4s" data-animation-duration="5s">
+                        En cuanto la línea es recargada y los beneficios son aplicados no puede revertirse este proceso. La vigencia se <br>
+                        mantendrá conforme al paquete recargado, no es posible reducir o aumentar tiempo de vigencia de la recarga del <br>
+                        paquete seleccionado.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.6s" data-animation-duration="5s">
+                        Cuando los beneficios son aplicados comienza la viegencia de la recarga hasta las 23:59:59 del último día que se <br>
+                        termina la vigencia.
+                    </p>
+                    <p  class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.8s" data-animation-duration="5s">
+                        Para evitar una suspensión o inactividad de la línea por falta de uso es importante ejecutar una recarga por mucho <br>
+                        cada 45 días. Si el proceso se completó de manera exitosa y el usuario no cuenta con beneficios de su recarga es <br>
+                        necesario validar con el equipo de soporte de DIRÉ A TRAVÉS DE NUESTRO CALL CENTER <a href="tel:">00 00 0000 0000</a>
+                    </p>
                 </div>
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 

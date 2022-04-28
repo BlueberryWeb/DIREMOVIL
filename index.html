@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" href="img/fabicon.svg"/>
     <link rel="stylesheet" href="css/animate.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <meta name="description" content="Empresa mexicana que se especializa en branding, campañas publicitarias, diseño y desarrollo web, "/>
     <meta name="keywords" content="Telefonía móvil, Telefonía móvil en Guadalajara, Diré Móvil, Diré SIM, Diré planes, Diré linea"/>
     <meta name="author" content="blueberry.mx"/>
@@ -22,28 +23,31 @@
     <title>DIRÉ MOVIL</title>
 </head>
 <body>
-    
-    <!--HEADER-->
-    <header class="header" id="showcase">
-        <nav class="navbar navbar-light pt-5">
+     <!--HEADER-->
+     <section class="showcase" id="showcase">
+        <header class="navbar navbar-expand-lg">
+            <a class="navbar-brand">
+                <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" id="logo-header">
+            </a>
+               
+              <button class="btn btn-link" onclick="menu()">
+                <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
+            </button>
+        </header>
+            <video src="vid/Video_Home.mp4" muted loop autoplay ></video>
             <div class="container">
-                <a class="navbar-brand"><img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" id="logo-header"></a>
-                <div class="">
-                    <button class="btn btn-link" onclick="menu()">
-                        <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
-                    </button>
+                <div class="row d-flex justify-content-center index">
+                    <div class="text">
+                        <div class="container">
+                            <div class="row d-flex justify-content-center">
+                                <h1 class="text-center display-3 animacion-titulos"><b>CON MUY POCO PUEDES <br> DECIR MUCHO</b></h1>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="container">
-            <div class="d-flex justify-content-center wp-animated"  data-animation="fadeInDown" data-animation-duration="2s">
-                <img src="img/Video_Home.gif" alt="DIRÉ MOVIL" class="img-fluid "/>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center pt-5">
-            <h1 class="text-center animacion-titulos"><b>CON MUY POCO PUEDES DECIR MUCHO</b> </h1>
-        </div>
-    </header>
+    </section>
     <!--MENU-->
     <header id="menu">
         <div class="container-fluid menu wp-animated" data-animation="fadeInRight">
@@ -70,7 +74,7 @@
                         </li>
                         <li>
                             <a href="planes.html">
-                                <h1 class="display-2 pt-5"><b>PLANES</b></h1>
+                                <h1 class="display-2 pt-5 bold"><b>PLANES</b></h1>
                             </a>
                         </li>
                         <li>
@@ -105,7 +109,7 @@
     <div class="container-fluid fondo-azul planes pt-5">
         <div class="container pt-5">
             <div class="row d-flex justify-content-center wp-animated-group">
-                <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown" data-animation-duration="2s"><b>PLANES</b></h1>
+                <h1 class="text-center display-3 wp-animated bold" data-animation="fadeInDown" data-animation-duration="2s"><b>PLANES</b></h1>
                 <h4 class="text-center pt-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.3s" data-animation-duration="3s">Conoce nuestros planes, tenemos uno que seguro se ajusta a tus necesidades.</h4>
             </div>
             <div class="row d-flex  justify-content-center pt-5">
@@ -113,14 +117,14 @@
                     <img src="img/Plan_5.gif" alt="DIRE 5" class="img-fluid zoom plan"/>
                 </div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn" data-animation-delay="1s" data-animation-duration="5s">
-                    <img src="img/Plan_20.gif" alt="DIRE 20" class="img-fluid zoom plan"/>
+                    <img src="img/Plan_Ilimitado.gif" alt="DIRE ILIMITADO" class="img-fluid zoom plan"/>
                 </div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn" data-animation-delay="2s" data-animation-duration="5s">
                     <img src="img/Plan_8.gif" alt="DIRE 8" class="img-fluid zoom plan"/>
                 </div>
             </div>
             <div class="row d-flex justify-content-center pt-5 pb-5">
-                <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s" ><b>Quieres hacer una recarga?</b></h4>
+                <h4 class="text-center wp-animated pt-3" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s" ><b>Quieres hacer una recarga?</b></h4>
                 <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s"><b style="color: #7B32EF;">Comunícate</b><b> con nosotros</b> <b style="color: #7B32EF;">000000000000000</b></h4>
             </div>
         </div>
@@ -132,9 +136,9 @@
         <video src="vid/Luces-centrada.mp4" muted loop autoplay ></video>
          <!--ACTIVA TU LÍNEA-->
         <div class="container-fluid activa-linea">
-            <div class="container pt-5 ">
-                <div class="row d-flex justify-content-center pt-5">
-                    <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown" data-animation-duration="5s" ><b>ACTIVA TU LÍNEA</b></h1>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <h1 class="text-center display-3 wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s" ><b>ACTIVA TU LÍNEA</b></h1>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-4 col-md-12 col-sm-12"> 
@@ -241,118 +245,12 @@
             </div>
         </div>
     </div>
-    <!--ACTIVA TU LÍNEA
-    <div class="container-fluid fondo-azul activa-linea pt-3">
-        <div class="container pt-5 ">
-            <div class="row d-flex justify-content-center pt-5">
-                <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown" data-animation-duration="5s" ><b>ACTIVA TU LÍNEA</b></h1>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-4 col-md-12 col-sm-12"> 
-                    <div class="row d-flex justify-content-start wp-animated-group">
-                        <h3 class="text-start wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s" ><b>Estás a unos pasos de vivir tu <br>
-                        experiencia al límite. Contacta a <br>
-                        uno de nuestros asesores y <br>
-                        disfruta de Diré.</b></h3>
-                    </div>
-                    <div class="text-start pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
-                        <button class="btn btn-primary conoce" data-bs-toggle="modal" data-bs-target="#activa-linea"><b>Conoce más</b> </button>
-                    </div>
-                    <!--ACTIVA TU LÍNEA MODAL
-                    <div class="modal fade" id="activa-linea" tabindex="-1" aria-labelledby="activa-linea" aria-hidden="true">
-                        <div class="modal-dialog modal-xl ">
-                        <div class="modal-content ">
-                            <div class="modal-body fondo-azul">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 fondo-morado-activa">
-                                            <div class="">
-                                                <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
-                                                <i class="fa-solid fa-xmark text-end  d-block d-sm-block d-md-none" type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></i>
-                                            </div>
-                                            <img src="img/activa-linea-popup.gif" alt="ACTIVA TU LINEA" class="img-fluid iconos-activa"/>
-                                        </div>
-                                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5">
-                                            <div class="text-end">
-                                                <i class="fa-solid fa-xmark btn-modal d-none d-sm-none d-md-block" type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></i>
-                                            </div>
-                                            <h1 class="text-center display-3 pt-5"><b>ACTIVA TU LÍNEA</b></h1>
-                                            <h5 class="text-center pt-5">Primero verifica que tu dispositivo móvil sea compatible</h5>
-                                            <div class="row pt-5">
-                                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
-                                                    <h5 class="text-center">01</h5>
-                                                    <h5 class="text-center">INGRESA LA MARCACIÓN DE <br> TU TÉLEFONO</h5>
-                                                    <p class="text-center">texto menor de (14 - 15 dígitos)</p>
-                                                </div>
-                                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
-                                                    <h5 class="text-center">02</h5>
-                                                    <h5 class="text-center">MARCA *#06#</h5>
-                                                    <p class="text-center">te aparecerá en la pantalla tu imei</p>
-                                                </div>
-                                            </div>
-                                            <div class="row pt-5">
-                                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
-                                                    <h5 class="text-center">03</h5>
-                                                    <h5 class="text-center">AHORA TIENES TU IMEI</h5>
-                                                </div>
-                                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 pt-3">
-                                                    <h5 class="text-center">04</h5>
-                                                    <h5 class="text-center"> INGRESA TU CÓDIGO A <br> CONTINUACIÓN</h5>
-                                                </div> 
-                                            </div>
-                                            <div class="row pt-5">
-                                                <div class="input-group input-group-sm mb-3">
-                                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Ingresa tu IMEI">
-                                                </div>
-                                            <div class="text-center pt-2">
-                                                <h5 class="text-center pt-5 pb-3">Comunicate con nosotros</h5>
-                                                <button class="btn btn-primary btn-tel-modal">
-                                                    <a href="tel:"><h5><b>00 00 0000 0000</b></h5> </a>
-                                                </button>
-                                                <h5 class="pt-4">Nuestro equipo de soporte te solicitará la siguiente <br>
-                                                información y te guiará en todo el proceso</h5>
-                                            </div>
-                                            <div class="text-start pt-5">
-                                                <ul>
-                                                    <li>Nombre del titular de la línea</li>
-                                                    <li>Correo electrónico</li>
-                                                    <li>Domicilio del usuario final</li>
-                                                    <li>MSISDN o ICCID (Identificador de la tarjeta sim con la que se realizará la activación)</li>
-                                                </ul>
-                                                <h5 class="ms-3"><b>Importante</b></h5>
-                                                <ul>
-                                                    <li>Asegúrate que tu equipo móvil esté liberado.</li>
-                                                    <li>Apaga tu equipo móvil, inserta tu SIM DIRÉ MÓVIL y no lo enciendas hasta <br> verificar que esté bien colocada.</li>
-                                                    <li> Una vez que el equipo móvil tiene la nueva SIM, enciéndelo y acepta todas las notificaciones para asegurar la configuración de tu equipo móvil.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="text-start pt-5 pb-5">
-                                                <p class="texto-morado text-center">Revisa las consideraciones para activar tu línea.</p>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8 col-md-12 col-sm-12">
-                   <div class="">
-                       <img src="img/Activa.gif" alt="DIRÉ MOVIL" class="img-fluid "/>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>-->
+   
     <!--LA PORTABILIDAD MÁS FÁCIL-->
-    <div class="container-fluid fondo-azul portabilidad-facil pt-5">
+    <div class="container-fluid fondo-azul portabilidad-facil">
         <div class="container pt-5">
             <div class="row pt-5">
-                <h1 class="text-center pt-5 display-2 wp-animated" data-animation="fadeInDown" data-animation-duration="5s" ><b>LA PORTABILIDAD MÁS FÁCIL</b></h1>
+                <h1 class="text-center pt-5 display-2 wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s" ><b>LA PORTABILIDAD MÁS FÁCIL</b></h1>
             </div>
             <div class="row pt-5 wp-animated-group">
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
@@ -456,7 +354,7 @@
                 <img src="img/vivir-telefonia-limite.png" alt="DIRÉ MOVIL" class="img-fluid"/>
             </div>
             <div class="row d-flex justify-content-center pt-5 pb-5">
-                <h2 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h2>
+                <h2 class="text-center wp-animated bold" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s"><b>ES MOMENTO DE VIVIR TU TELEFONÍA AL LÍMITE</b></h2>
             </div>
         </div>
     </div>
@@ -464,7 +362,7 @@
     <div class="container-fluid fondo-azul comunicate pt-5 pb-5">
         <div class="container wp-animated-group">
             <div class="row d-flex justify-content-center">
-                <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>COMUNÍCATE YA</b></h1>
+                <h1 class="text-center display-3 wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s"><b>COMUNÍCATE YA</b></h1>
                 <h5 class="text-center pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">Si tienes alguna duda o estás experimentando dificultades con tu línea te <br> podemos ayudar</h5>
             </div>
             <div class="text-center pt-5">
@@ -509,7 +407,7 @@
                     <img src="img/Comunicate.gif" alt="DIRÉ MOVIL" class="img-fluid"/>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
-                    <h1 class="pt-5 wp-animated" data-animation="fadeInDown" data-animation-duration="5s"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
+                    <h1 class="pt-5 wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
                     <h5 class="pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">Conoce más de Diré y entérate de nuestras promociones.</h5>
                     <div class="input-group pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                         <input type="text" class="form-control" placeholder="ejemplo@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon3">
@@ -528,7 +426,7 @@
                     <img src="img/Comunicate.gif" alt="DIRÉ MOVIL" class="img-fluid"/>
                 </div>
                 <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
-                    <h1 class="pt-5" ><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
+                    <h1 class="pt-5 bold" ><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
                     <h4 class="text-center pt-5"><b>TE HAS SUSCRITO DE FORMA EXITOSA</b></h4>
 
                     <h5 class="text-center pt-5">Revisa tu bandeja de entrada, <br> y comienza a recibir tus promociones.</h5>
