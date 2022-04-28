@@ -7,6 +7,13 @@ LILA: #8246AF
     font-family: "Proxima Nova";
     src: url("fonts/Proxima_Nova_Font.otf");
 }
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url("fonts/Proxima-Nova-Bold.otf");
+}
+.bold{
+    font-family: "Proxima Nova Bold";
+}
 body{
     font-family: "Proxima Nova";
 }
@@ -124,6 +131,10 @@ a:hover{
 }
 .comunicate{
 
+}
+.como-funciona{
+    position: relative;
+    text-align: center;
 }
 .como-funciona h5{
     cursor: pointer;
@@ -281,22 +292,23 @@ footer{
     margin-left: 50px;
     max-width: 30px;
 }
+.icono-bb{
+    margin-top: 190px;
+}
 /*ANIMACIONES*/
 .animacion-titulos{
     display: inline-block;
     animation: fadeIn;
     animation-duration: 10s;
+    font-family: "Proxima Nova Bold";
 }
 .zoom{
     transition: transform .2s;
+    
 }
 .zoom:hover{
     transform: scale(1.1);
     opacity: 1;
-    background-image: url("../img/luz.gif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 /*TERMINA ANIMACIONES*/
 .opcion:hover{
@@ -404,6 +416,31 @@ footer{
     height: 100px;
     background: linear-gradient(#0D0642, #24135F );
 }
+.planes img{
+    max-width: 300px;
+}
+.planes p{
+    text-align: start;
+}
+.planes h2{
+    margin-top: 5rem;
+    font-family: "Proxima Nova Bold";
+}
+.swal-overlay {
+    background-color: rgba( 36, 19, 95, 0.5);
+}
+.swal-title{
+    color: #fff;
+    font-size: 50px;
+}
+.swal-modal {
+    background-color: rgba(13, 6, 66,1);
+}
+.swal-text{
+    color: #ffff;
+    font-family: "Proxima Nova Bold";
+    text-align: center;
+}
 @media screen and (max-width:300px){
     .logo-modal{
         max-width: 150px;
@@ -419,6 +456,9 @@ footer{
         margin-top: 280px;
     }
     .icono-redes{
+        margin-top: 0;
+    }
+    .icono-bb{
         margin-top: 0;
     }
     .menu{
@@ -439,6 +479,9 @@ footer{
         margin-top: 280px;
     }
     .icono-redes{
+        margin-top: 0;
+    }
+    .icono-bb{
         margin-top: 0;
     }
     .menu{
@@ -480,6 +523,9 @@ footer{
     .icono-redes{
         margin-top: 0;
     }
+    .icono-bb{
+        margin-top: 0;
+    }
     .menu{
         height: 140vh;
     }
@@ -494,6 +540,9 @@ footer{
         margin-top: 280px;
     }
     .icono-redes{
+        margin-top: 0;
+    }
+    .icono-bb{
         margin-top: 0;
     }
     .menu{
@@ -516,6 +565,9 @@ footer{
     .icono-redes{
         margin-top: 0;
     }
+    .icono-bb{
+        margin-top: 0;
+    }
     .menu{
         height: 120vh;
     }
@@ -534,6 +586,9 @@ footer{
         margin-top: 280px;
     }
     .icono-redes{
+        margin-top: 0;
+    }
+    .icono-bb{
         margin-top: 0;
     }
     .menu{
