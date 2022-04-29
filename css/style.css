@@ -112,9 +112,11 @@ a:hover{
 }
 .planes{
     text-align: center;
+    position: relative;
 }
 .plan{
     opacity: 0.5;
+    position: relative;
 }
 .activa-linea{
     text-align: center; 
@@ -124,6 +126,7 @@ a:hover{
     margin-top: 300px;
 }
 .portabilidad-facil{
+    position: relative;
 
 }
 .telefononia-limite{
@@ -411,10 +414,15 @@ footer{
     height: 100px;
     background: linear-gradient(#24135F, #0D0642);
 }
+.degradado-videos{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(#0F0744, #090541);
+}
 .degradado-abajo{
     width: 100%;
     height: 100px;
-    background: linear-gradient(#0D0642, #24135F );
+    background: linear-gradient(#0D0643, #24135F );
 }
 .planes img{
     max-width: 300px;
