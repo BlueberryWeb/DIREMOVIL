@@ -18,7 +18,9 @@
     <header class="header" id="showcase">
         <nav class="navbar navbar-light pt-5">
             <div class="container">
-                <a class="navbar-brand"><img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" id="logo-header"></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" id="logo-header">
+                </a>
                 <div class="">
                     <button class="btn btn-link" onclick="menu()">
                         <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
@@ -41,7 +43,9 @@
             <div class="row">
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12">
                     <div class="">
-                        <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
+                        <a href="index.html">
+                            <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" class="img-fluid logo-modal"/>
+                        </a>
                         <i class="fa-solid fa-xmark d-block d-sm-block d-md-none" id="men-cerrar" onclick="cerrar()"></i>
                     </div>
                     <img src="img/Vector.png" alt="DIRÉ IG" class="img-fluid icono-redes pt-5"/> 
@@ -195,41 +199,49 @@
             </div>
         </div>
         </div>
-        <!--SUSCRIBETE-->
-        <div class="container-fluid fondo-azul pt-5 pb-5" id="suscripcion">
-            <div class="container pt-5">
-                <div class="row pt-5 wp-animated-group">
-                    <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-duration="5s">
-                        <img src="img/Comunicate.gif" alt="DIRÉ MOVIL" class="img-fluid"/>
-                    </div>
-                    <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
-                        <h1 class="pt-5 wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
-                        <h5 class="pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">Conoce más de Diré y entérate de nuestras promociones.</h5>
-                        <div class="input-group pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
-                            <input type="text" class="form-control" placeholder="ejemplo@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon3">
-                            <span class="input-group-text" id="basic-addon3" type="button" onclick="enviar()">Suscribete</span>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--MENSAJE CUANDO SE SUSCRIBEN-->
-        <div class="container-fluid fondo-azul pt-5 pb-5" id="mensaje">
-            <div class="container pt-5">
-                <div class="row pt-5">
-                    <div class="col-12 col-lg-6 col-md-12 col-sm-12 ">
-                        <img src="img/Comunicate.gif" alt="DIRÉ MOVIL" class="img-fluid"/>
-                    </div>
-                    <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
-                        <h1 class="pt-5 bold" ><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
-                        <h4 class="text-center pt-5"><b>TE HAS SUSCRITO DE FORMA EXITOSA</b></h4>
+    <div class="container-fluid degradado-arriba"></div>
 
-                        <h5 class="text-center pt-5">Revisa tu bandeja de entrada, <br> y comienza a recibir tus promociones.</h5>
+        <!--SUSCRIBETE-->
+        <section class="luces-centrada" id="suscripcion">
+            <video src="vid/Luces-llena.mp4" muted loop autoplay ></video>
+            <div class="container-fluid portabilidad-facil">
+                <div class="container pt-5">
+                    <div class="row pt-5 wp-animated-group">
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-duration="5s">
+                            <img src="img/Comunicate.gif" alt="DIRÉ MOVIL" class="img-fluid"/>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
+                            <h1 class="pt-5 wp-animated bold" data-animation="fadeInDown" data-animation-duration="5s"><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
+                            <h5 class="pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">Conoce más de Diré y entérate de nuestras promociones.</h5>
+                            <div class="input-group pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
+                                <input type="text" class="form-control" placeholder="ejemplo@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon3">
+                                <span class="input-group-text" id="basic-addon3" type="button" onclick="enviar()">Suscribete</span>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--MENSAJE CUANDO SE SUSCRIBEN-->
+        <section class="luces-centrada" id="mensaje">
+            <video src="vid/Luces-llena.mp4" muted loop autoplay ></video>
+            <div class="container-fluid portabilidad-facil">
+                <div class="container pt-5">
+                    <div class="row pt-5">
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 ">
+                            <img src="img/Comunicate.gif" alt="DIRÉ MOVIL" class="img-fluid"/>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5 pb-5">
+                            <h1 class="pt-5 bold" ><b>SUSCRÍBITE AL NEWSLETTER</b></h1>
+                            <h4 class="text-center pt-5"><b>TE HAS SUSCRITO DE FORMA EXITOSA</b></h4>
+        
+                            <h5 class="text-center pt-5">Revisa tu bandeja de entrada, <br> y comienza a recibir tus promociones.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
    
    
     
@@ -239,7 +251,9 @@
     <footer>
         <div class="container-fluid">
             <div class="text-center pt-4 pb-4">
-                <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" class="img-fluid logo-footer"  />
+                <a href="index.html">
+                    <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" class="img-fluid logo-footer"  />
+                </a>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
