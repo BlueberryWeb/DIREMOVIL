@@ -88,7 +88,7 @@ a:hover{
 .fondo-morado-activa{
     background-image: url("../img/fondo-modales.png");
     background-repeat: no-repeat;
-    height: 145vh;
+    height: auto;
     background-size: cover;
 }
 .fondo-azul{
