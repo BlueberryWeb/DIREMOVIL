@@ -437,6 +437,9 @@ footer{
     font-family: "Proxima Nova Bold";
     text-align: center;
 }
+.lista-aviso li{
+    list-style: none;
+}
 @media (max-width:300px){
     .showcase{
         padding: 0;
