@@ -32,7 +32,7 @@ $senderName = 'Pagina Dire';
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
-$recipient = 'pruebas.blueberry2@gmail.com';
+$recipient = 'pruebascorreosbb@gmail.com';
 $recipient = 'noreply.blueberry@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
