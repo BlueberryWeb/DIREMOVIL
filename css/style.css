@@ -442,6 +442,17 @@ footer{
 .lista-aviso li{
     list-style: none;
 }
+.plan-index{
+    position: relative;
+}
+.plan-index img{
+    position: absolute;
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.plan-index img.top:hover{
+    opacity: 0;
+}
 @media (max-width:300px){
     .showcase{
         padding: 0;
