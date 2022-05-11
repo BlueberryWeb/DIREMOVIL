@@ -28,53 +28,50 @@
 
 
 
-      <!--PLANES-->
-      <section class="luces-centrada">
+    <!--PLANES-->
+    <section class="luces-centrada">
         <video src="vid/Luces-centrada.mp4" muted loop autoplay></video>
         <!--PLANES-->
         <div class="container-fluid planes">
-            
+            <div class="container pt-5">
+                <div class="row d-flex justify-content-center wp-animated-group">
+                    <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown"
+                        data-animation-duration="2s"><b>PLANES</b></h1>
+                    <h4 class="text-center pt-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.3s"
+                        data-animation-duration="3s">Conoce nuestros planes, tenemos uno que seguro se ajusta a tus
+                        necesidades.</h4>
+                </div>
+                <div class="row d-flex  justify-content-center pt-5">
+                    <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3 " data-animation="zoomIn"
+                        data-animation-duration="5s">
+                        <a href="planes.html">
+                            <img src="img/Plan_5.gif" alt="DIRE 5" class="img-fluid zoom plan" />
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn"
+                        data-animation-delay="1s" data-animation-duration="5s">
+                        <a href="planes.html">
+                            <img src="img/Plan_Ilimitado.gif" alt="DIRE ILIMITADO" class="img-fluid zoom plan" />
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn"
+                        data-animation-delay="2s" data-animation-duration="5s">
+                        <a href="planes.html">
+                            <img src="img/Plan_8.gif" alt="DIRE 8" class="img-fluid zoom plan" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center pt-5 pb-5">
+                    <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
+                        data-animation-duration="5s"><b>Quieres hacer una recarga?</b></h4>
+                    <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
+                        data-animation-duration="5s"><b style="color: #7B32EF;">Comunícate</b><b> con nosotros</b> <b
+                            style="color: #7B32EF;">000000000000000</b></h4>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="container pt-5">
-        <div class="row d-flex justify-content-center wp-animated-group">
-            <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown"
-                data-animation-duration="2s"><b>PLANES</b></h1>
-            <h4 class="text-center pt-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.3s"
-                data-animation-duration="3s">Conoce nuestros planes, tenemos uno que seguro se ajusta a tus
-                necesidades.</h4>
-        </div>
-        <div class="row d-flex  justify-content-center pt-5">
-            <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3 plan-index" data-animation="zoomIn"
-                data-animation-duration="5s">
-                <a href="planes.html">
-                    <img src="img/Plan_5.gif" alt="DIRE 5" class="img-fluid zoom plan" />
-                    <img src="img/dire-5.png" alt="DIRE 5" class="img-fluid top"/>
-                </a>
-            </div>
-            <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3 plan-index" data-animation="zoomIn"
-                data-animation-delay="1s" data-animation-duration="5s">
-                <a href="planes.html">
-                    <img src="img/Plan_Ilimitado.gif" alt="DIRE ILIMITADO" class="img-fluid zoom plan" />
-                    <img src="img/dire-ilimitado.png" alt="DIRE ILIMITADO" class="img-fluid top"/>
-                </a>
-            </div>
-            <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3 plan-index" data-animation="zoomIn"
-                data-animation-delay="2s" data-animation-duration="5s">
-                <a href="planes.html">
-                    <img src="img/Plan_8.gif" alt="DIRE 8" class="img-fluid zoom plan" />
-                    <img src="img/dire-8.png" alt="DIRE 8" class="img-fluid top"/>
-                </a>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center pt-5 pb-5">
-            <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
-                data-animation-duration="5s"><b>Quieres hacer una recarga?</b></h4>
-            <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
-                data-animation-duration="5s"><b style="color: #7B32EF;">Comunícate</b><b> con nosotros</b> <b
-                    style="color: #7B32EF;">000000000000000</b></h4>
-        </div>
-    </div>
+   
     <style>
         .contenedor {
   position: relative;
@@ -92,9 +89,81 @@
 }
 
 .contenedor img.top:hover {
-  opacity: 1;
+  opacity: 0;
+
 }
+.imagen{
+     opacity: 0.8;
+     transition: transform .2s;
+    }
+    .imagen .img-png:hover{
+        opacity: 1.2;
+        transform: scale(1.1);
+        visibility: visible;
+
+    }
+    .img-png{
+        visibility: hidden;
+    }
     </style>
+    <!--<div class="imagen">
+        <img src="img/Plan_Ilimitado.gif" alt="DIRE ILIMITADO" class="img-fluid zoom plan" />
+        <img src="img/dire-ilimitado.png" alt="DIRE ILIMITADO" class="img-fluid img-png" />
+    </div>-->
+
+    <script>
+        
+    </script>
+
+<section class="luces-centrada">
+    <video src="vid/Luces-centrada.mp4" muted loop autoplay></video>
+    <!--PLANES-->
+    <div class="container-fluid planes">
+        <div class="container pt-5">
+            <div class="row d-flex justify-content-center wp-animated-group">
+                <h1 class="text-center display-3 wp-animated" data-animation="fadeInDown"
+                    data-animation-duration="2s"><b>PLANES</b></h1>
+                <h4 class="text-center pt-4 wp-animated" data-animation="fadeInDown" data-animation-delay="0.3s"
+                    data-animation-duration="3s">Conoce nuestros planes, tenemos uno que seguro se ajusta a tus
+                    necesidades.</h4>
+            </div>
+            <div class="row d-flex  justify-content-center pt-5">
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3 " data-animation="zoomIn"
+                    data-animation-duration="5s">
+                    <a href="planes.html">
+                        <img src="img/Plan_5.gif" id="plan_5" class="zoom plan img-fluid" alt="DIRE 5" />
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn"
+                    data-animation-delay="1s" data-animation-duration="5s">
+                    <a href="planes.html">
+                        <img src="img/Plan_Ilimitado.gif" id="plan_ilimitado" class="zoom plan img-fluid" alt="DIRE ILIMITADO"/>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn"
+                    data-animation-delay="2s" data-animation-duration="5s">
+                    <a href="planes.html">
+                        <img src="img/Plan_8.gif" id="plan_8" class="zoom plan img-fluid" alt="DIRE 8" />
+                    </a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center pt-5 pb-5">
+                <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s"
+                    data-animation-duration="5s"><b>Quieres hacer una recarga?</b></h4>
+                <h4 class="text-center wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s"
+                    data-animation-duration="5s"><b style="color: #7B32EF;">Comunícate</b><b> con nosotros</b> <b
+                        style="color: #7B32EF;">000000000000000</b></h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="planes.html">
+    <img src="img/Plan_Ilimitado.gif" id="plan_ilimitado" class="zoom plan">
+</a>
+
+
+    <!--
     <div class="contenedor">
         <img src="img/dire-5.png" />
         <img class="top" src="img/Plan_5.gif" />
@@ -103,6 +172,14 @@
         <img src="http://programandoointentandolo.com/ejemplos/imagenes/cubo/img6.png" />
         <img class="top" src="http://programandoointentandolo.com/ejemplos/imagenes/cubo/img1.png" />
     </div>
+    <div class="contenedor">
+        <img src="http://programandoointentandolo.com/ejemplos/imagenes/cubo/img1.png" />
+        <img class="top" src="http://programandoointentandolo.com/ejemplos/imagenes/cubo/img6.png" />
+    </div>
+      <div class="contenedor">
+        <img src="http://programandoointentandolo.com/ejemplos/imagenes/cubo/img6.png" />
+        <img class="top" src="http://programandoointentandolo.com/ejemplos/imagenes/cubo/img1.png" />
+    </div>-->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

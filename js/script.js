@@ -129,3 +129,43 @@ function enviar(){
     document.getElementById('mensaje').style.display = 'block';
     document.getElementById('suscripcion').style.display = 'none';
 }
+
+//CAMBIAR IMAGEN CON EL HOVER
+window.addEventListener('load', dire5, false);
+function dire5() {      
+    var imagen = document.getElementById('plan_5');
+    imagen.addEventListener('mouseover', peligro, false);
+    imagen.addEventListener('mouseout', restaurar, false);
+}
+function restaurar(){
+    var imagen = document.getElementById('plan_5').src = "img/Plan_5.gif";
+}
+function peligro() {
+    var imagen = document.getElementById('plan_5').src = "img/dire-5.png";
+}
+//DIRÉ ILIMITADO
+window.addEventListener('load', direIlimitado, false);
+function direIlimitado() {    
+    var imagen = document.getElementById('plan_ilimitado');
+    imagen.addEventListener('mouseover', peligro2, false);
+    imagen.addEventListener('mouseout', restaurar_ilimitado, false);
+}
+function restaurar_ilimitado(){
+    var imagen = document.getElementById('plan_ilimitado').src = "img/Plan_Ilimitado.gif";
+}
+function peligro2() {
+    var imagen = document.getElementById('plan_ilimitado').src = "img/dire-ilimitado.png";
+}
+//DIRÉ 8
+window.addEventListener('load', dire8, false);
+function dire8() {
+    var imagen = document.getElementById('plan_8');
+    imagen.addEventListener('mouseover', peligro3, false);
+    imagen.addEventListener('mouseout', restaurar_8, false);
+}
+function restaurar_8(){
+    var imagen = document.getElementById('plan_8').src = "img/Plan_8.gif";
+}
+function peligro3() {
+    var imagen = document.getElementById('plan_8').src = "img/dire-8.png";
+}
