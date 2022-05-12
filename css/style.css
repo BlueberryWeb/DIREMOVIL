@@ -155,6 +155,9 @@ a:hover{
 .redes img{
     max-width: 20px;
 }
+.fb-footer{
+    max-width: 12px!important;
+}
 .sim {
     max-width: 500px;
     margin-top: 200px;
@@ -238,7 +241,6 @@ footer{
     width: 250px;
     height: 40px;
 }
-
 .btn-tel:hover{
     background-color: #8246AF;
     color: #fff;
@@ -301,6 +303,11 @@ footer{
     margin-top: 180px;
     margin-left: 50px;
     max-width: 30px;
+}
+.fb-menu{
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 18px!important;
 }
 .icono-bb{
     margin-top: 190px;
