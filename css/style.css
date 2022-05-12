@@ -11,6 +11,13 @@ LILA: #8246AF
     font-family: "Proxima Nova Bold";
     src: url("fonts/Proxima-Nova-Bold.otf");
 }
+@font-face {
+    font-family: "Proxima Nova Semi-Bold";
+    src: url("fonts/Proxima\ Nova\ Semibold.otf");
+}
+.semibold{
+    font-family: "roxima Nova Semi-Bold";
+}
 .bold{
     font-family: "Proxima Nova Bold";
 }
@@ -442,7 +449,9 @@ footer{
 .lista-aviso li{
     list-style: none;
 }
-
+.recarga:hover{
+    color: #8246AF;
+}
 @media (max-width:300px){
     .showcase{
         padding: 0;
