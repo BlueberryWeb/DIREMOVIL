@@ -460,6 +460,15 @@ footer{
 .recarga:hover{
     color: #8246AF;
 }
+.cel-porta{
+    margin-top: -45px;
+}
+.num{
+    font-size: 8rem;
+}
+.hrs{
+    margin-top: -30px;
+}
 @media (max-width:300px){
     .showcase{
         padding: 0;
