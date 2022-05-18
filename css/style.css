@@ -498,6 +498,9 @@ footer{
     .menu{
         height: 140vh;
     }
+    .fb-menu{
+        margin-top: 0;
+    }
 }
 @media (max-width:400px){
     .showcase{
@@ -541,6 +544,10 @@ footer{
         max-width: 300px;
         margin-left: 0;
     }
+    .fb-menu{
+        margin-top: 0;
+    }
+    
 }
 @media (max-width:500px){
     .showcase header{
@@ -573,6 +580,9 @@ footer{
     .menu{
         height: 140vh;
     }
+    .fb-menu{
+        margin-top: 0;
+    }
 }
 @media (max-width:600px){
     .showcase{
@@ -596,7 +606,10 @@ footer{
         margin-top: 0;
     }
     .menu{
-        height: 120vh;
+        height: 140vh;
+    }
+    .fb-menu{
+        margin-top: 0;
     }
 }
 @media (max-width:700px){
@@ -625,7 +638,10 @@ footer{
         margin-top: 0;
     }
     .menu{
-        height: 120vh;
+        height: 140vh;
+    }
+    .fb-menu{
+        margin-top: 0;
     }
 }
 @media (max-width:800px){
@@ -654,9 +670,10 @@ footer{
         margin-top: 0;
     }
     .menu{
-        height: 120vh;
+        height: 140vh;
     }
-
-
+    .fb-menu{
+        margin-top: 0;
+    }
     
 }
