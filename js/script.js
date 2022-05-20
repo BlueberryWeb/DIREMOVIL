@@ -131,6 +131,7 @@ function enviar(){
 }
 
 //CAMBIAR IMAGEN CON EL HOVER
+/*
 window.addEventListener('load', dire5, false);
 function dire5() {      
     var imagen = document.getElementById('plan_5');
@@ -142,8 +143,9 @@ function restaurar(){
 }
 function peligro() {
     var imagen = document.getElementById('plan_5').src = "img/dire-5.png";
-}
+}*/
 //DIRÉ ILIMITADO
+/*
 window.addEventListener('load', direIlimitado, false);
 function direIlimitado() {    
     var imagen = document.getElementById('plan_ilimitado');
@@ -168,4 +170,4 @@ function restaurar_8(){
 }
 function peligro3() {
     var imagen = document.getElementById('plan_8').src = "img/dire-8.png";
-}
+}*/
