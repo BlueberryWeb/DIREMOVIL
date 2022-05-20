@@ -26,7 +26,7 @@
 </head>
 <body>
 
- <!--MENU-->
+ <!--MENU
  <header>
     <div class="container-fluid menu wp-animated" data-animation="fadeInRight">
         <div class="row">
@@ -213,7 +213,7 @@ h1 span:nth-child(14){ animation-delay:.65s; }
 
   
 </style>
-<button class="btn btn-primary">Hola</button>
+
 <h1>
     <span>G</span>
     <span>e</span>
@@ -229,7 +229,113 @@ h1 span:nth-child(14){ animation-delay:.65s; }
     <span>k</span>
     <span>s</span>
 </h1>
+-->
+<!--HEADER-->
+<section class="showcase" id="showcase">
+    <header class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Diré-Loop.gif" alt="DIRÉ MOVIL" id="logo-header">
+        </a>
 
+        <button class="btn btn-link" onclick="menu()">
+            <img src="img/Menu.png" alt="Menu" class="img-fluid btn-menu" />
+        </button>
+    </header>
+    <video src="vid/Header-Dire.mp4" muted loop autoplay class="d-none d-sm-none d-md-block"></video>
+    <div class="container">
+        <div class="row">
+            <div id="element_4" class="text-center">
+                <button class="btn btn-primary btn-baja"><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container">
+            <div class="row d-flex justify-content-center index">
+                <div class="text">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <h1 class="text-center display-3 animacion-titulos"><b>CON MUY POCO PUEDES <br> DECIR MUCHO</b></h1>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>-->
+</section>
+<style>
+
+#element_4{
+    display: inline-block;
+    animation: colorMovimiento 4s infinite ease;
+}
+.btn-baja{
+    border-radius: 100%;
+    background-color: #7B32EF;
+    border-color: #7B32EF;
+    width: 100px;
+    height: 100px;
+}
+.btn-baja:hover{
+    background-color: #7B32EF;
+    border-color: #7B32EF;
+    width: 100px;
+}
+.fa-arrow-down{
+    font-size: 2rem;
+}
+.btn-baja::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #8246AF;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+.btn-baja:hover::after, .btn-baja:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+ 
+@keyframes colorMovimiento{
+   0%{
+       transform: translateY(0px);
+    }
+  25%{
+      transform: translateY(-50px);
+    }
+  50%{
+      transform: translateY(-20px);
+    }
+  100%{
+      transform: translateY(-50px);
+    }
+} 
+</style>
+<div class="container">
+    <div class="row">
+        <div id="element_4" class="text-center">
+            <button class="btn btn-primary btn-baja"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+</div>
 
 
     <!--PLANES-
