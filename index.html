@@ -24,7 +24,7 @@
     <title>DIRÉ MOVIL</title>
 </head>
 
-<body>
+<body onload="setTimeout(myFunction, 22000);">
     <!--HEADER-->
     <section class="showcase" id="showcase">
         <header class="navbar navbar-expand-lg">
@@ -156,19 +156,19 @@
                 <div class="row d-flex  justify-content-center pt-5">
                     <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3 " data-animation="zoomIn"
                         data-animation-duration="5s">
-                        <a href="planes.html">
+                        <a href="planes.html#direPlan5">
                             <img src="img/dire-5.png" id="plan_5" class="zoom plan img-fluid" alt="DIRE 5" />
                         </a>
                     </div>
                     <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn"
                         data-animation-delay="1s" data-animation-duration="5s">
-                        <a href="planes.html">
+                        <a href="planes.html#direIlimitado">
                             <img src="img/dire-ilimitado.png" id="plan_ilimitado" class="zoom plan img-fluid" alt="DIRE ILIMITADO"/>
                         </a>
                     </div>
                     <div class="col-12 col-lg-4 col-md-12 col-sm-12 wp-animated pt-3" data-animation="zoomIn"
                         data-animation-delay="2s" data-animation-duration="5s">
-                        <a href="planes.html">
+                        <a href="planes.html#direPlan8">
                             <img src="img/dire-8.png" id="plan_8" class="zoom plan img-fluid" alt="DIRE 8" />
                         </a>
                     </div>
@@ -721,6 +721,13 @@
     <script src="js/script.js"></script>
     <script src="lib/easy-waypoint-animate.js"></script>
     <script src="lib/jquery.waypoints.js"></script>
+    <script>
+
+        function myFunction() {
+            window.scrollTo(0, 900);
+        }
+
+    </script>
 </body>
 
 </html>
