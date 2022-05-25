@@ -130,6 +130,10 @@ function enviar(){
     document.getElementById('suscripcion').style.display = 'none';
 }
 
+function myFunction() {
+    window.scrollTo(0, 900);
+}
+
 //CAMBIAR IMAGEN CON EL HOVER
 /*
 window.addEventListener('load', dire5, false);
