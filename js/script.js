@@ -1,3 +1,5 @@
+window.onpaint = setTimeout(myFunction, 22000);
+
 function menu(){
     document.getElementById('menu').style.display = 'block';
     document.getElementById('showcase').style.display = 'none';
