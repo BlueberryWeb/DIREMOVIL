@@ -1,4 +1,4 @@
-window.onpaint = setTimeout(myFunction, 22000);
+
 
 function menu(){
     document.getElementById('menu').style.display = 'block';
@@ -132,9 +132,7 @@ function enviar(){
     document.getElementById('suscripcion').style.display = 'none';
 }
 
-function myFunction() {
-    window.scrollTo(0, 900);
-}
+
 
 //CAMBIAR IMAGEN CON EL HOVER
 /*
